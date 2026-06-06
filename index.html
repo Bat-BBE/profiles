@@ -59,7 +59,6 @@
         color: inherit;
       }
 
-      /* NAV */
       nav {
         position: fixed;
         top: 0;
@@ -82,10 +81,17 @@
         gap: 24px;
       }
       .nav-logo {
-        font-family: "DM Serif Display", serif;
-        font-size: 1.1rem;
-        letter-spacing: -0.01em;
-        color: var(--text);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        font-weight: 500;
+      }
+
+      .nav-logo-img {
+        width: 36px;
+        height: 36px;
+        object-fit: contain;
       }
       .nav-links {
         display: flex;
@@ -177,7 +183,7 @@
         align-items: center;
         gap: 8px;
         background: var(--blue-light);
-        color: var(--blue);
+        color: var(--у);
         padding: 6px 16px;
         border-radius: 100px;
         font-size: 0.8rem;
@@ -191,7 +197,7 @@
         width: 8px;
         height: 8px;
         border-radius: 50%;
-        background: var(--blue);
+        background: rgb(77, 255, 0);
         animation: pulse 2s infinite;
       }
       @keyframes pulse {
@@ -304,7 +310,7 @@
         padding: 100px 40px;
       }
       .section-inner {
-        max-width: 1200px;
+        max-width: 1250px;
         margin: 0 auto;
       }
       .section-label {
@@ -324,7 +330,7 @@
       .section-sub {
         font-size: 1.05rem;
         color: var(--muted);
-        max-width: 540px;
+        max-width: 100%;
         line-height: 1.75;
       }
       .divider {
@@ -613,7 +619,7 @@
         font-size: 0.9rem;
         color: var(--muted);
         line-height: 1.7;
-        max-width: 560px;
+        max-width: 100%;
       }
       .tl-tag {
         display: inline-block;
@@ -745,7 +751,7 @@
 
       /* LEADERSHIP */
       .leadership-section {
-        background: var(--blue);
+        background: var(--text);
         color: #fff;
       }
       .leadership-section .section-label {
@@ -1253,7 +1259,7 @@
       }
       .goals-inner {
         text-align: center;
-        max-width: 760px;
+        max-width: 1200px;
         margin: 0 auto;
       }
       .goals-inner .section-title {
@@ -1284,7 +1290,7 @@
       .goal-num {
         font-size: 3rem;
         font-weight: 700;
-        color: var(--blue-light);
+        color: var(--blue);
         font-family: "DM Serif Display", serif;
         line-height: 1;
         margin-bottom: 12px;
@@ -1325,8 +1331,8 @@
 
       /* FOOTER */
       footer {
-        background: var(--text);
-        color: #fff;
+        background: var(--border);
+        color: #000000;
         padding: 60px 40px 40px;
       }
       .footer-inner {
@@ -1341,11 +1347,11 @@
         font-family: "DM Serif Display", serif;
         font-size: 1.3rem;
         margin-bottom: 12px;
-        color: #fff;
+        color: #000000;
       }
       .footer-brand p {
         font-size: 0.875rem;
-        color: rgba(255, 255, 255, 0.5);
+        color: rgba(0, 0, 0, 0.5);
         line-height: 1.7;
       }
       .footer-links h4 {
@@ -1353,7 +1359,7 @@
         font-weight: 600;
         letter-spacing: 0.08em;
         text-transform: uppercase;
-        color: rgba(255, 255, 255, 0.4);
+        color: rgba(0, 0, 0, 0.409);
         margin-bottom: 16px;
       }
       .footer-links ul {
@@ -1364,11 +1370,11 @@
       }
       .footer-links li a {
         font-size: 0.875rem;
-        color: rgba(255, 255, 255, 0.6);
+        color: rgba(0, 0, 0, 0.6);
         transition: color 0.2s;
       }
       .footer-links li a:hover {
-        color: #fff;
+        color: #000000;
       }
       .footer-social {
         display: flex;
@@ -1379,12 +1385,12 @@
         width: 40px;
         height: 40px;
         border-radius: 50%;
-        background: rgba(255, 255, 255, 0.08);
-        border: 1px solid rgba(255, 255, 255, 0.12);
+        background: rgba(0, 0, 0, 0.08);
+        border: 1px solid rgba(0, 0, 0, 0.12);
         display: flex;
         align-items: center;
         justify-content: center;
-        color: rgba(255, 255, 255, 0.6);
+        color: rgba(0, 0, 0, 0.6);
         font-size: 0.9rem;
         transition: all 0.2s;
         text-decoration: none;
@@ -1392,7 +1398,7 @@
       .social-btn:hover {
         background: var(--blue);
         border-color: var(--blue);
-        color: #fff;
+        color: #000000;
       }
       .footer-bottom {
         border-top: 1px solid rgba(255, 255, 255, 0.08);
@@ -1405,7 +1411,7 @@
       }
       .footer-bottom p {
         font-size: 0.8rem;
-        color: rgba(255, 255, 255, 0.3);
+        color: rgba(0, 0, 0, 0.55);
       }
 
       /* ANIMATIONS */
@@ -1468,7 +1474,7 @@
         font-size: 4rem;
         font-weight: 700;
         font-family: "DM Serif Display", serif;
-        color: rgba(255, 255, 255, 0.07);
+        color: rgba(255, 255, 255, 0.772);
         line-height: 1;
         padding-top: 4px;
       }
@@ -1494,7 +1500,7 @@
         font-size: 0.95rem;
         color: rgba(255, 255, 255, 0.65);
         line-height: 1.85;
-        max-width: 600px;
+        max-width: 100%;
       }
       .story-ch-highlight {
         display: inline-block;
@@ -1692,6 +1698,429 @@
         color: var(--blue);
       }
 
+      /* PORTFOLIO REFINEMENTS */
+      .nav-cta i,
+      .view-btn i,
+      .doc-card i,
+      .proj-meta-item i,
+      .tl-tag i,
+      .footer-links i {
+        margin-right: 6px;
+      }
+      .hero-actions {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        /* margin: 12px 0 0px; */
+      }
+      .hero-btn,
+      .view-btn,
+      .outline-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        border-radius: 999px;
+        padding: 11px 20px;
+        border: 1.5px solid var(--blue);
+        font-size: 0.875rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+      .hero-btn,
+      .view-btn {
+        background: var(--blue);
+        color: #fff;
+      }
+      .outline-btn {
+        background: #fff;
+        color: var(--blue);
+      }
+      .hero-btn:hover,
+      .view-btn:hover {
+        background: #1d4ed8;
+        transform: translateY(-1px);
+      }
+      .outline-btn:hover {
+        background: var(--blue-light);
+        transform: translateY(-1px);
+      }
+      .mini-note {
+        font-size: 0.78rem;
+        color: var(--muted);
+        margin-top: 10px;
+        line-height: 1.55;
+      }
+      .badge-row,
+      .tag-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 16px;
+      }
+      .soft-badge,
+      .status-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 5px 11px;
+        border-radius: 999px;
+        background: var(--blue-light);
+        color: var(--blue);
+        font-size: 0.76rem;
+        font-weight: 700;
+      }
+      .status-badge.dark {
+        background: rgba(255, 255, 255, 0.12);
+        color: #fff;
+        border: 1px solid rgba(255, 255, 255, 0.14);
+      }
+      .metric-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 18px;
+        margin-top: 42px;
+      }
+      .metric-card {
+        border: 1px solid var(--border);
+        border-radius: var(--radius-lg);
+        padding: 24px;
+        background: #fff;
+        transition: all 0.25s ease;
+      }
+      .metric-card:hover {
+        border-color: var(--blue);
+        transform: translateY(-3px);
+        box-shadow: 0 14px 44px rgba(37, 99, 235, 0.08);
+      }
+      .metric-card .num {
+        font-family: "DM Serif Display", serif;
+        color: var(--blue);
+        font-size: 2.15rem;
+        line-height: 1;
+        margin-bottom: 8px;
+      }
+      .metric-card h4 {
+        font-size: 0.92rem;
+        margin-bottom: 7px;
+      }
+      .metric-card p {
+        font-size: 0.82rem;
+        color: var(--muted);
+        line-height: 1.65;
+      }
+      .clean-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        margin-top: 14px;
+      }
+      .clean-list li {
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+        font-size: 0.9rem;
+        line-height: 1.58;
+        color: var(--muted);
+      }
+      .clean-list li i {
+        color: var(--blue);
+        margin-top: 4px;
+        flex-shrink: 0;
+      }
+      .project-actions {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 18px;
+      }
+      .project-actions .outline-btn,
+      .project-actions .view-btn {
+        padding: 9px 15px;
+        font-size: 0.8rem;
+      }
+      .proof-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 18px;
+        margin-top: 56px;
+      }
+      .proof-card {
+        border: 1px solid var(--border);
+        background: #fff;
+        border-radius: var(--radius-lg);
+        padding: 24px;
+        transition: all 0.25s ease;
+      }
+      .proof-card:hover {
+        border-color: var(--blue);
+        box-shadow: 0 14px 44px rgba(37, 99, 235, 0.08);
+        transform: translateY(-3px);
+      }
+      .proof-icon {
+        width: 46px;
+        height: 46px;
+        border-radius: 14px;
+        background: var(--blue-light);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--blue);
+        margin-bottom: 16px;
+      }
+      .proof-card h4 {
+        font-size: 0.98rem;
+        line-height: 1.35;
+        margin-bottom: 7px;
+      }
+      .proof-card p {
+        color: var(--muted);
+        font-size: 0.83rem;
+        line-height: 1.65;
+        margin-bottom: 16px;
+      }
+      .proof-card .outline-btn {
+        width: 100%;
+        padding: 9px 14px;
+        font-size: 0.8rem;
+      }
+      .pdf-frame {
+        width: 100%;
+        height: min(74vh, 760px);
+        border: 0;
+        background: #fff;
+      }
+      .pdf-modal-header .title-wrap {
+        display: flex;
+        gap: 13px;
+        align-items: center;
+        min-width: 0;
+      }
+      .pdf-modal-header .title-wrap .pdf-placeholder-icon {
+        width: 42px;
+        height: 42px;
+        border-radius: 12px;
+        background: var(--blue-light);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--blue);
+        font-size: 1.2rem;
+      }
+      .pdf-modal-header h3 {
+        margin-bottom: 6px;
+      }
+      .roadmap-progress {
+        width: 66.7%;
+      }
+      .doc-card .doc-icon {
+        color: #fff;
+      }
+      .doc-card .outline-btn {
+        margin-top: 18px;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.08);
+        color: #fff;
+        border-color: rgba(255, 255, 255, 0.22);
+      }
+      .doc-card .outline-btn:hover {
+        background: rgba(255, 255, 255, 0.16);
+      }
+      .logos-section {
+        background: var(--blue-light);
+        padding: 48px 40px;
+        border-top: 1px solid var(--ink-10);
+        border-bottom: 1px solid var(--ink-10);
+      }
+      .logo-img-box {
+        background: #ffffff;
+        border: 1px solid rgba(15, 23, 42, 0.08);
+        overflow: hidden;
+        padding: 0px;
+      }
+
+      .logo-img-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+      }
+      .logos-label {
+        text-align: center;
+        font-size: 0.68rem;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--ink-60);
+        margin-bottom: 32px;
+      }
+      .logos-track {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 32px 48px;
+      }
+      .logo-badge {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        opacity: 0.65;
+        transition: opacity 0.2s;
+        cursor: default;
+      }
+      .logo-badge:hover {
+        opacity: 1;
+      }
+      .logo-circle {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background: #fff;
+        border: 1px solid var(--ink-10);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.4rem;
+        font-weight: 700;
+        font-family: "Cormorant Garamond", serif;
+        color: var(--ink);
+        letter-spacing: -0.02em;
+      }
+      .logo-name {
+        font-size: 0.65rem;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--ink-60);
+        text-align: center;
+        max-width: 80px;
+        line-height: 1.4;
+      }
+      .logo-type {
+        display: inline-block;
+        margin-top: 2px;
+        font-size: 0.58rem;
+        font-weight: 500;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--ink-30);
+      }
+
+      /* ── ABOUT ── */
+      .about-section {
+        background: var(--white);
+      }
+      .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+        align-items: start;
+        margin-top: 56px;
+      }
+      .about-text p {
+        font-size: 0.95rem;
+        color: var(--ink-60);
+        line-height: 1.85;
+        margin-bottom: 18px;
+      }
+      .about-values {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        margin-top: 36px;
+        border: 1px solid var(--ink-10);
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+      }
+      .val-row {
+        display: flex;
+        gap: 18px;
+        align-items: flex-start;
+        padding: 20px 22px;
+        border-bottom: 1px solid var(--ink-10);
+      }
+      .val-row:last-child {
+        border-bottom: none;
+      }
+      .val-icon {
+        font-size: 1.2rem;
+        flex-shrink: 0;
+        margin-top: 2px;
+        width: 28px;
+        text-align: center;
+      }
+      .val-row h4 {
+        font-size: 0.88rem;
+        font-weight: 600;
+        margin-bottom: 3px;
+      }
+      .val-row p {
+        font-size: 0.82rem;
+        color: var(--ink-60);
+        line-height: 1.6;
+      }
+      .about-right {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .stat-card-big {
+        background: var(--surface);
+        border: 1px solid var(--ink-10);
+        border-radius: var(--radius-lg);
+        padding: 28px;
+      }
+      .stat-card-big .big-n {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 3.5rem;
+        font-weight: 400;
+        line-height: 1;
+        color: var(--ink);
+        margin-bottom: 8px;
+      }
+      .stat-card-big p {
+        font-size: 0.85rem;
+        color: var(--ink-60);
+        line-height: 1.65;
+      }
+      .about-img-wrap {
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+        aspect-ratio: 4/3;
+      }
+      .about-img-wrap img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: grayscale(10%);
+      }
+      @media (max-width: 900px) {
+        .metric-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (max-width: 600px) {
+        .metric-grid {
+          grid-template-columns: 1fr;
+        }
+        .hero-actions {
+          margin-top: -20px;
+        }
+        .pdf-modal {
+          padding: 8px;
+        }
+        .pdf-modal-header {
+          padding: 14px 16px;
+        }
+        .pdf-frame {
+          height: 74vh;
+        }
+      }
+
       /* RESPONSIVE */
       @media (max-width: 900px) {
         .story-chapter {
@@ -1786,19 +2215,29 @@
       }
     </style>
   </head>
+
   <body>
     <nav id="topnav">
       <div class="nav-inner">
-        <div class="nav-logo">Б.Бат-Эрдэнэ</div>
+        <div class="nav-logo">
+          <img
+            src="assets/images/image1.png"
+            alt="NUM Logo"
+            class="nav-logo-img"
+          />
+          <span>Б.Бат-Эрдэнэ</span>
+        </div>
         <ul class="nav-links">
           <li><a href="#story">Түүх</a></li>
           <li><a href="#academic">Сурлага</a></li>
+          <li><a href="#timeline">Амжилт</a></li>
           <li><a href="#projects">Төслүүд</a></li>
-          <li><a href="#roadmap">Замнал</a></li>
-          <li><a href="#beyond">Үйл ажиллагаа</a></li>
+          <li><a href="#documents">Материал</a></li>
           <li><a href="#contact">Холбоо барих</a></li>
         </ul>
-        <button class="nav-cta" onclick="openDoc('cv')">CV татах</button>
+        <button class="nav-cta" onclick="openDoc('cv')">
+          <i class="fas fa-eye"></i> CV харах
+        </button>
         <div class="hamburger" onclick="toggleMenu()" aria-label="Menu">
           <span></span><span></span><span></span>
         </div>
@@ -1810,10 +2249,12 @@
       <a href="#academic" onclick="toggleMenu()">Сурлагын амжилт</a>
       <a href="#timeline" onclick="toggleMenu()">Амжилтын замнал</a>
       <a href="#projects" onclick="toggleMenu()">Төслүүд</a>
-      <a href="#leadership" onclick="toggleMenu()">Манлайлал</a>
-      <a href="#roadmap" onclick="toggleMenu()">Карьерын замнал</a>
+      <a href="#leadership" onclick="toggleMenu()"
+        >Шилдэг төгсөгчийн үндэслэл</a
+      >
+      <a href="#roadmap" onclick="toggleMenu()">Ирээдүйн замнал</a>
       <a href="#beyond" onclick="toggleMenu()">Үйл ажиллагаа</a>
-      <a href="#certificates" onclick="toggleMenu()">Сертификатууд</a>
+      <a href="#documents" onclick="toggleMenu()">Материал</a>
       <a href="#contact" onclick="toggleMenu()">Холбоо барих</a>
     </div>
 
@@ -1833,47 +2274,58 @@
           </p>
           <div class="hero-stats reveal reveal-delay-3">
             <div class="stat-item">
-              <span class="stat-num counter" data-target="3.7" data-decimals="2"
+              <span class="stat-num counter" data-target="3.7" data-decimals="1"
                 >0</span
               >
               <span class="stat-label">GPA</span>
             </div>
             <div class="stat-divider"></div>
             <div class="stat-item">
-              <span class="stat-num counter" data-target="6" data-decimals="0"
-                >0</span
+              <span
+                class="stat-num"
+                style="display: flex; align-items: baseline; gap: 2px"
+                ><span class="counter" data-target="6" data-decimals="0">0</span
+                ><span style="font-size: 1.2rem">+</span></span
               >
               <span class="stat-label">Төсөл</span>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="stat-item">
-              <span class="stat-num counter" data-target="6" data-decimals="0"
-                >0</span
-              >
-              <span class="stat-label">Шагнал</span>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="stat-item">
-              <span class="stat-num counter" data-target="126" data-decimals="0"
-                >0</span
-              >
-              <span class="stat-label">Кредит</span>
             </div>
             <div class="stat-divider"></div>
             <div class="stat-item">
               <span
                 class="stat-num"
                 style="display: flex; align-items: baseline; gap: 2px"
-                ><span class="counter" data-target="8" data-decimals="0">0</span
+                ><span class="counter" data-target="5" data-decimals="0">0</span
                 ><span style="font-size: 1.2rem">+</span></span
               >
-              <span class="stat-label">Сертификат</span>
+              <span class="stat-label">Амжилт</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-num counter" data-target="126" data-decimals="0"
+                >0</span
+              >
+              <span class="stat-label">Багц цаг</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span
+                class="stat-num"
+                style="display: flex; align-items: baseline; gap: 2px"
+                ><span class="counter" data-target="5" data-decimals="0">0</span
+                ><span style="font-size: 1.2rem">+</span></span
+              >
+              <span class="stat-label">Санал</span>
             </div>
           </div>
         </div>
         <div class="hero-img-wrap reveal reveal-delay-2">
           <img
-            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=700&q=80"
+            src="assets/images/profile.png"
+            onerror="
+              this.onerror = null;
+              this.src =
+                'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=700&q=80';
+            "
             alt="профайл зураг"
           />
           <div class="hero-badge-float">
@@ -1882,7 +2334,7 @@
             </div>
             <div class="hero-badge-float-text">
               <strong>2022 оны элсэгч</strong>
-              <span>ДУА - Шилдэг төгсөгч</span>
+              <span>Төгсөх оюутан</span>
             </div>
           </div>
         </div>
@@ -1892,75 +2344,85 @@
     <section id="about">
       <div class="section-inner">
         <p class="section-label reveal">Миний тухай</p>
-        <h2 class="section-title reveal">Бат-Эрдэнэ гэж хэн бэ ?</h2>
+        <h2 class="section-title reveal">Бат-Эрдэнэ гэж хэн бэ?</h2>
         <div class="divider reveal"></div>
+
         <div class="about-grid">
           <div class="about-text reveal">
             <p>
-              Би Батбаярын Бат-Эрдэнэ, МУИС-ийн Мэдээллийн Технологийн 4 дүгээр
-              түвшний оюутан. Технологийг бодит асуудал шийдвэрлэх, хүмүүст үнэ
-              цэн бүтээх хэрэгсэл гэж үздэг.
+              Намайг Батбаярын Бат-Эрдэнэ гэдэг. 2004 оны 6 дугаар сарын 12-нд
+              төрсөн бөгөөд Дундговь аймгийн Эрдмийн далай цогцолбор 1-р
+              сургуульд суралцаж, 2022 онд Монгол Улсын Их Сургуульд элсэн
+              орсон.
             </p>
 
             <p>
-              Программ хангамж хөгжүүлэлт, хакатон, төслүүдээр дамжуулан мэдлэг,
-              туршлагаа өргөжүүлж, тасралтгүй хөгжихийг зорьдог.
+              Одоогоор МУИС-ийн Мэдээллийн технологи, электроникийн сургуульд
+              суралцаж, веб хөгжүүлэлт, программ хөгжүүлэлт, багийн ажиллагаа
+              болон бодит төслийн хэрэгжилтийн чиглэлээр мэдлэг, ур чадвараа
+              тасралтгүй хөгжүүлж байна.
             </p>
+
             <p>
-              Цаашид хиймэл оюун ухааны чиглэлээр судалгаа хийж, Монгол улсын
-              технологийн салбарт оруулах хувь нэмрээ нэмэгдүүлэх зорилготой.
+              Суралцахын зэрэгцээ CoreMind ХХК-д веб хөгжүүлэгчээр ажиллаж,
+              бодит бүтээгдэхүүн хөгжүүлэлтийн үйл явцад оролцож байна. Дадлагын
+              хугацаандаа ажлын санал авч үргэлжлүүлэн ажилласан нь миний
+              мэргэжлийн ур чадвар, ажлын хандлагыг харуулсан бодит туршлага юм.
             </p>
+
             <div class="about-values">
               <div class="value-item">
-                <div class="value-icon">
-                  <i class="fas fa-chart-line"></i>
-                </div>
+                <div class="value-icon"><i class="fas fa-code"></i></div>
                 <div>
-                  <h4>Тасралтгүй хөгжил</h4>
+                  <h4>Бодит хөгжүүлэлт</h4>
                   <p>
-                    Шинэ мэдлэг, ур чадвар эзэмшиж, өөрийгөө өдөр бүр
-                    хөгжүүлэхийг зорьдог. Алдаа, сорилтыг суралцах боломж гэж
-                    хардаг.
+                    Онолын мэдлэгээ бодит веб бүтээгдэхүүн, хэрэглэгчид хүрэх
+                    шийдэл болгон хэрэгжүүлэхийг зорьдог.
+                  </p>
+                </div>
+              </div>
+
+              <div class="value-item">
+                <div class="value-icon"><i class="fas fa-users-gear"></i></div>
+                <div>
+                  <h4>Багаар ажиллах чадвар</h4>
+                  <p>
+                    Hackathon болон төслийн уралдаануудаар богино хугацаанд
+                    санаа гаргах, prototype бүтээх, pitch хийх туршлага
+                    хуримтлуулсан.
                   </p>
                 </div>
               </div>
 
               <div class="value-item">
                 <div class="value-icon">
-                  <i class="fas fa-handshake"></i>
+                  <i class="fas fa-arrow-trend-up"></i>
                 </div>
                 <div>
-                  <h4>Хамтын ажиллагаа</h4>
+                  <h4>Тасралтгүй өсөлт</h4>
                   <p>
-                    Багийн орчинд үр дүнтэй ажиллаж, бусдын санаа бодлыг
-                    хүндэтгэн хамтдаа илүү үнэ цэнтэй шийдэл бүтээхийг
-                    эрмэлздэг.
-                  </p>
-                </div>
-              </div>
-
-              <div class="value-item">
-                <div class="value-icon">
-                  <i class="fas fa-lightbulb"></i>
-                </div>
-                <div>
-                  <h4>Бүтээлч сэтгэлгээ</h4>
-                  <p>
-                    Технологийг зөвхөн суралцах хэрэгсэл бус бодит асуудлыг
-                    шийдвэрлэх, хүмүүст үнэ цэн бүтээх боломж гэж үздэг.
+                    Алдаа, сорилт бүрийг өөрийгөө сайжруулах боломж гэж харж,
+                    дараагийн шатанд илүү бэлтгэлтэй байхыг эрмэлздэг.
                   </p>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="about-img reveal reveal-delay-2">
             <img
-              src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&q=80"
+              src="assets/images/campus.png"
+              onerror="
+                this.onerror = null;
+                this.src =
+                  'https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&q=80';
+              "
               alt="Оюутны амьдрал"
             />
+
             <div class="about-card-float">
               <div class="big">4 жил</div>
-              <small>Тасралтгүй хичээл зүтгэл</small>
+              <small>Суралцсан, бүтээсэн, хөгжсөн замнал</small>
             </div>
           </div>
         </div>
@@ -1969,72 +2431,79 @@
 
     <section class="story-section" id="story">
       <div class="section-inner">
-        <p class="section-label reveal">Хувийн Түүх</p>
-
-        <h2 class="section-title reveal">Бодит замнал</h2>
-
+        <p class="section-label reveal">Хувийн түүх</p>
+        <h2 class="section-title reveal">Эхлэлээс бодит бүтээл хүртэл</h2>
         <div class="divider reveal"></div>
-
         <div class="story-chapters">
           <div class="story-chapter reveal">
             <div class="story-ch-num">01</div>
             <div class="story-ch-body">
-              <div class="story-ch-label">Эхлэл</div>
-              <div class="story-ch-title">Технологитой танилцах мөч</div>
+              <div class="story-ch-label">2004–2022</div>
+              <div class="story-ch-title">
+                Дундговиос эхэлсэн суурь хүмүүжил
+              </div>
               <div class="story-ch-text">
-                Анх компьютер эвдэрч, өөрөө засах оролдлого хийсэн үеэс
-                технологид татагдаж эхэлсэн. Тэр мөчөөс эхлэн би технологийг
-                зөвхөн хэрэглэгч биш, бүтээгч талаас нь ойлгож эхэлсэн.
+                Айлын дунд хүүхдийн хувьд бие даах, бусдыг сонсох, өөрийн үүрэг
+                хариуцлагаа ухамсарлах дадлыг гэр бүл, сургуулийн орчноосоо авч
+                өссөн. Энэ суурь нь их сургуулийн амьдралд тогтвортой суралцах,
+                бусадтай хамтарч ажиллах хандлага болж төлөвшсөн.
               </div>
               <div class="story-ch-highlight">
-                “Технологи бол зөвхөн хэрэгсэл биш — боломж нээдэг түлхүүр.”
+                Хариуцлага, тууштай байдал, өөрийгөө хөгжүүлэх дадал.
               </div>
             </div>
           </div>
           <div class="story-chapter reveal">
             <div class="story-ch-num">02</div>
             <div class="story-ch-body">
-              <div class="story-ch-label">Суралцах үе</div>
-              <div class="story-ch-title">Сорилтоор дамжсан өсөлт</div>
+              <div class="story-ch-label">2022</div>
+              <div class="story-ch-title">
+                МУИС-д элсэн орж мэргэжлийн чиглэлээ сонгосон үе
+              </div>
               <div class="story-ch-text">
-                Их сургуулийн жилүүдэд онолын мэдлэгээ практик төсөл, хакатон,
-                багийн ажлуудаар бататгаж ирсэн. Хэцүү үе бүрийг шинэ ур чадвар
-                эзэмших боломж болгон ашигласан.
+                2022 онд МУИС-д элсэн орсноор программ хангамж, мэдээллийн
+                технологийн чиглэлээр суралцах боломж бүрдсэн. Сургалтын явцад
+                зөвхөн дүн бус, бодит чадвар, portfolio, бүтээлээрээ өөрийгөө
+                батлахыг зорьсон.
               </div>
               <div class="story-ch-highlight">
-                “Сорилт бүр шинэ түвшний эхлэл байдаг.”
+                Онолын мэдлэгийг практик чадвартай холбох эхлэл.
               </div>
             </div>
           </div>
-
           <div class="story-chapter reveal">
             <div class="story-ch-num">03</div>
             <div class="story-ch-body">
-              <div class="story-ch-label">Бүтээл</div>
-              <div class="story-ch-title">Бодит асуудлыг шийдэх эхлэл</div>
+              <div class="story-ch-label">2025–2026</div>
+              <div class="story-ch-title">
+                Хакатон, уралдаан, эрдэм шинжилгээний оролцоо
+              </div>
               <div class="story-ch-text">
-                Хакатон болон төслүүд дээр ажиллах явцдаа бодит асуудлыг
-                технологиор шийдэх туршлага хуримтлуулсан. Багаар хамтрах,
-                богино хугацаанд шийдэл гаргах чадвар илүү хөгжсөн.
+                Future of DigiPay Hackathon 2025, Санхүүгийн инновац TechSprint
+                2026, SPARK DAY 2026 зэрэг уралдаанд оролцож, шилдэг багуудын
+                нэгээр шалгаран 72 цагийн хөгжүүлэлт, pitch, prototype,
+                бүтээгдэхүүн хөгжүүлэх туршлага хуримтлуулсан.
               </div>
               <div class="story-ch-highlight">
-                “Асуудал бол боломжийн эхлэл.”
+                Санаагаа богино хугацаанд ажиллах шийдэл болгох чадвар.
               </div>
             </div>
           </div>
-
           <div class="story-chapter reveal">
             <div class="story-ch-num">04</div>
             <div class="story-ch-body">
-              <div class="story-ch-label">Өнөөдөр</div>
-              <div class="story-ch-title">Ирээдүйд чиглэсэн алхам</div>
+              <div class="story-ch-label">2026 оноос</div>
+              <div class="story-ch-title">
+                CoreMind ХХК-д ажиллаж буй өнөөдөр
+              </div>
               <div class="story-ch-text">
-                Одоо би программ хангамж болон хиймэл оюун ухааны чиглэлээр
-                өөрийгөө хөгжүүлж, Монголын технологийн хөгжилд хувь нэмэр
-                оруулах зорилготой ажиллаж байна.
+                Дадлага болон ажлын орчинд бодит бүтээгдэхүүн хөгжүүлж, 5+ төсөл
+                дээр ажиллан, веб хөгжүүлэлтийн хувьд хэрэглэгчид хүрэх шийдэл
+                гаргах чадвараа хөгжүүлж байна. Энэ нь төгсөх түвшний оюутны
+                хувьд онол, практикийн заагийг холбосон үнэ цэнтэй туршлага юм.
               </div>
               <div class="story-ch-highlight">
-                “Би асуудал шийддэг хөгжүүлэгч болохыг зорьдог.”
+                Суралцагчаас бүтээгч рүү шилжиж буй замнал.
               </div>
             </div>
           </div>
@@ -2045,14 +2514,17 @@
     <section id="academic">
       <div class="section-inner">
         <p class="section-label reveal">Сурлагын амжилт</p>
-        <h2 class="section-title reveal">Академик Гүйцэтгэл</h2>
+        <h2 class="section-title reveal">Академик гүйцэтгэл</h2>
         <div class="divider reveal"></div>
+        <p class="section-sub reveal">
+          Сүүлийн улирлуудад тогтвортой өндөр гүйцэтгэл үзүүлж, сургалт, ажил,
+          дипломын ажил, тэмцээний оролцоог хамт зэрэг авч явсан нь гол онцлог
+          юм.
+        </p>
         <div class="academic-grid">
           <div class="acad-card featured reveal">
-            <div class="acad-icon">
-              <i class="fas fa-chart-line fa-2x"></i>
-            </div>
-            <h3>Голч Дүн (GPA)</h3>
+            <div class="acad-icon"><i class="fas fa-chart-line fa-2x"></i></div>
+            <h3>Дүнгийн голч GPA</h3>
             <div
               class="stat-num"
               style="font-size: 3rem; margin: 16px 0; color: #fff"
@@ -2060,71 +2532,55 @@
               3.7
             </div>
             <div class="prog-row">
-              <span class="prog-label">Үндсэн хичээл</span>
-              <span class="prog-val">3.9</span>
+              <span class="prog-label">Сүүлийн 4 улирал GPA</span
+              ><span class="prog-val">3.925</span>
             </div>
             <div class="progress-bar">
-              <div class="progress-fill" data-width="100"></div>
+              <div class="progress-fill" data-width="98.1"></div>
             </div>
             <div class="prog-row" style="margin-top: 12px">
-              <span class="prog-label">Нийт голч</span>
-              <span class="prog-val">3.7</span>
+              <span class="prog-label">Тогтвортой байдал</span
+              ><span class="prog-val">Өндөр</span>
             </div>
             <div class="progress-bar">
-              <div class="progress-fill" data-width="98.75"></div>
+              <div class="progress-fill" data-width="96"></div>
             </div>
-            <div class="acad-foot">Амжилттай судалсан · 126 кредит</div>
+            <p
+              style="
+                margin-top: 14px;
+                color: rgba(255, 255, 255, 0.78);
+                font-size: 0.86rem;
+              "
+            >
+              Сургалтын ачаалал, ажил, дипломын ажлыг зэрэгцүүлсэн гүйцэтгэл.
+            </p>
           </div>
-
           <div class="acad-card reveal reveal-delay-1">
-            <div class="acad-icon">
-              <i class="fas fa-trophy fa-2x"></i>
+            <div class="acad-icon"><i class="fas fa-award fa-2x"></i></div>
+            <h3>Сүүлийн 2 улирал</h3>
+            <div class="stat-num" style="font-size: 2.7rem; margin: 16px 0">
+              4.0
             </div>
-            <h3>Тэтгэлгүүд</h3>
-            <ul class="award-list">
+            <p>
+              Төгсөх улиралд сурлагын голчоо хамгийн өндөр түвшинд хадгалсан.
+            </p>
+            <ul class="clean-list">
               <li>
-                <i
-                  class="fas fa-star"
-                  style="color: var(--blue); flex-shrink: 0; margin-top: 2px"
-                ></i>
-                <div>
-                  <strong>Ерөнхий тэтгэлэг</strong>
-                  <span>Академик амжилтад суурилсан тэтгэлэг</span>
-                </div>
+                <i class="fas fa-check"></i
+                ><span
+                  >Ажлын хажуугаар хичээл, төсөл, дипломыг зэрэг авч
+                  явсан.</span
+                >
               </li>
               <li>
-                <i
-                  class="fas fa-star"
-                  style="color: var(--blue); flex-shrink: 0; margin-top: 2px"
-                ></i>
-                <div>
-                  <strong>Excellence Scholarship</strong>
-                  <span>Тогтвортой өндөр гүйцэтгэл</span>
-                </div>
-              </li>
-              <li>
-                <i
-                  class="fas fa-star"
-                  style="color: var(--blue); flex-shrink: 0; margin-top: 2px"
-                ></i>
-                <div>
-                  <strong>Dean’s List</strong>
-                  <span>Олон улирал дараалан</span>
-                </div>
-              </li>
-              <li>
-                <i
-                  class="fas fa-medal"
-                  style="color: var(--blue); flex-shrink: 0; margin-top: 2px"
-                ></i>
-                <div>
-                  <strong>Шилдэг төсөл</strong>
-                  <span>Дипломын ажил</span>
-                </div>
+                <i class="fas fa-check"></i
+                ><span
+                  >Төгсөх жилийн ачаалалтай үед тогтвортой үр дүн
+                  үзүүлсэн.</span
+                >
               </li>
             </ul>
           </div>
-
           <div
             class="acad-card reveal reveal-delay-2"
             style="
@@ -2135,32 +2591,45 @@
               text-align: center;
             "
           >
-            <div class="acad-icon">
-              <i class="fas fa-file-alt fa-2x"></i>
-            </div>
-            <h3>Дүнгийн Хуулбар</h3>
-            <p
-              class="muted"
-              style="
-                color: var(--muted);
-                font-size: 0.875rem;
-                margin: 8px 0 24px;
-              "
-            >
-              2026 оны 06 сарын 02-нд шинэчлэгдсэн
+            <div class="acad-icon"><i class="fas fa-file-pdf fa-2x"></i></div>
+            <h3>Дүнгийн хуулбар</h3>
+            <button class="transcript-btn" onclick="openDoc('transcript')">
+              <i class="fas fa-eye"></i> Дүнгийн хуулбар харах
+            </button>
+          </div>
+        </div>
+        <div class="metric-grid reveal">
+          <div class="metric-card">
+            <div class="num">4.0</div>
+            <h4>Дипломын үнэлгээ</h4>
+            <p>
+              Монгол уламжлалт тоглоомыг веб орчинд хөгжүүлэх 6 кредитийн
+              дипломын ажил.
             </p>
-            <div
-              style="
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-                width: 100%;
-              "
-            >
-              <button class="transcript-btn" onclick="openDoc('transcript')">
-                <i class="fas fa-file-pdf"></i> Дүнгийн хуулбар үзэх
-              </button>
-            </div>
+          </div>
+          <div class="metric-card">
+            <div class="num">4+</div>
+            <h4>Тэмцээнд оролцсон</h4>
+            <p>
+              Диплом, хичээл, ажлын хажуугаар завгүй байсан ч өөрийгөө сорьж
+              тэмцээнд оролцсон.
+            </p>
+          </div>
+          <div class="metric-card">
+            <div class="num">6+</div>
+            <h4>Бодит төсөл</h4>
+            <p>
+              CoreMind ХХК-д дадлага болон ажлын хугацаандаа веб хөгжүүлэлтийн
+              бодит ажлуудад оролцсон.
+            </p>
+          </div>
+          <div class="metric-card">
+            <div class="num">5+</div>
+            <h4>Ажлын санал</h4>
+            <p>
+              Хаан банк, MCS/Unitel, Тэсо, Монос зэрэг байгууллагуудад дадлага,
+              ажлын санал авсан.
+            </p>
           </div>
         </div>
       </div>
@@ -2168,377 +2637,725 @@
 
     <section class="timeline-section" id="timeline">
       <div class="section-inner">
-        <p class="section-label reveal">Амжилтын жагсаалт</p>
-        <h2 class="section-title reveal">
-          Хийсэн зүйлс<br />Гаргасан амжилтууд
-        </h2>
+        <p class="section-label reveal">Амжилтын дараалал</p>
+        <h2 class="section-title reveal">Он цагийн дараалалтай амжилт</h2>
         <div class="divider reveal"></div>
         <div class="timeline reveal">
           <div class="tl-item">
             <div class="tl-dot"></div>
-            <div class="tl-year">2024 оны 03 сар</div>
+            <div class="tl-year">2022 он</div>
             <div class="tl-title">
-              Монгол Улсын хиймэл оюун ухааны олимпиадын 1-р байр
+              МУИС-д элсэн орж мэргэжлийн замналаа эхлүүлсэн
             </div>
             <div class="tl-desc">
-              Улсын олимпиадад 120 гаруй оролцогчоос 1-р байр эзэлж, Монголын AI
-              холбооноос хүлээн авсан шагнал болон тэтгэлэгт хамрагдсан.
+              Мэдээллийн технологийн чиглэлээр суралцаж, веб хөгжүүлэлт болон
+              программ хөгжүүлэлтийн сууриа тавьсан.
             </div>
-            <span class="tl-tag gold">1-р байр</span>
+            <span class="tl-tag blue">Эхлэл</span>
           </div>
           <div class="tl-item">
             <div class="tl-dot"></div>
-            <div class="tl-year">2023 оны 10 сар</div>
+            <div class="tl-year">2025 он</div>
             <div class="tl-title">
-              Оюутны Холбооны Ерөнхийлөгч болон сонгогдов
+              Future of DigiPay Hackathon — шилдэг 7 багийн нэг, 4-р байр /
+              тусгай байр
             </div>
             <div class="tl-desc">
-              15,000 гаруй оюутны саналаар МУСИС-ийн Оюутны Холбооны Ерөнхийлөгч
-              болон сонгогдож, нийт 8 хэлтсийг удирдан ажиллаж байна.
+              ХААН Банкны DigiPay чиглэлийн hackathon-д эхний болон хоёрдугаар
+              шатыг давж, 72 цагийн хөгжүүлэлт хийсэн. Шилдэг pitch-ээр
+              үнэлэгдэж, дадлага болон ажлын урилга авсан.
             </div>
-            <span class="tl-tag blue">Манлайлал</span>
+            <span class="tl-tag gold">Hackathon</span>
           </div>
           <div class="tl-item">
             <div class="tl-dot"></div>
-            <div class="tl-year">2023 оны 05 сар</div>
+            <div class="tl-year">2026 он</div>
             <div class="tl-title">
-              Smart Mongolia Hackathon — Хамгийн сайн шийдэл
+              Санхүүгийн инновац TechSprint 2026 — шилдэг 10 баг
             </div>
             <div class="tl-desc">
-              Багийг удирдан "Ухаалаг тариалан" платформыг боловсруулж, 62
-              багийн дунд 1-р байр эзлэв. Шийдэл нь Хөдөө аж ахуйн яамны
-              сонирхлыг татсан.
+              72 цагийн бүтээгдэхүүн хөгжүүлэлт хийж, багийн бүтээлч шийдэл,
+              хурдан prototype гаргах чадвараа баталсан.
             </div>
-            <span class="tl-tag gold">Шилдэг шийдэл</span>
+            <span class="tl-tag blue">Top 10</span>
           </div>
           <div class="tl-item">
             <div class="tl-dot"></div>
-            <div class="tl-year">2023 оны 02 сар</div>
-            <div class="tl-title">ICPC Asia Regional — Монголыг төлөөлөв</div>
-            <div class="tl-desc">
-              Алгоритмийн дэлхийн тэмцээний Азийн бүсийн шатанд Монгол Улсыг
-              төлөөлж оролцож, 28-р байр эзэлсэн.
+            <div class="tl-year">2026 он</div>
+            <div class="tl-title">
+              SPARK DAY 2026 төслийн уралдаан — тусгай байр
             </div>
-            <span class="tl-tag blue">Олон улс</span>
+            <div class="tl-desc">
+              Оюутан залуусын бүтээлч санааг дэмжих уралдаанд шилдэг
+              бүтээгдэхүүн хөгжүүлэлтээр шалгарч, хамтран ажиллах болон дадлага,
+              ажлын урилга авсан.
+            </div>
+            <span class="tl-tag green">Тусгай байр</span>
           </div>
           <div class="tl-item">
             <div class="tl-dot"></div>
-            <div class="tl-year">2022 оны 11 сар</div>
+            <div class="tl-year">2026 он</div>
             <div class="tl-title">
-              Google Developer Student Club — Үүсгэн байгуулагч
+              ММТ 2026 эрдэм шинжилгээний хурал — poster илтгэл
             </div>
             <div class="tl-desc">
-              МУСИС-д Google-ын дэмжлэгтэй оюутны tech клубыг байгуулж, нийт 200
-              гаруй гишүүнтэй болгосон. 12 гаруй воркшоп, хакатон зохион
-              байгуулсан.
+              Монголын мэдээллийн технологийн 2026 оны эрдэм шинжилгээний хуралд
+              poster илтгэлээр шалгарч, судалгааны ажлаа танилцуулсан.
             </div>
-            <span class="tl-tag green">Нийгмийн оролцоо</span>
+            <span class="tl-tag blue">Poster</span>
           </div>
           <div class="tl-item">
             <div class="tl-dot"></div>
-            <div class="tl-year">2022 оны 06 сар</div>
+            <div class="tl-year">2026 оноос</div>
             <div class="tl-title">
-              Хиймэл оюун ухааны судалгааны ажил нийтлэгдэв
+              CoreMind ХХК — Web Developer, 4+ бодит төсөл
             </div>
             <div class="tl-desc">
-              "Mongol Script OCR with Deep Learning" судалгааны ажил IEEE
-              конференцэд хүлээн авагдаж нийтлэгдсэн. Удирдагч профессор: д.г.у
-              Б.Эрдэнэтуяа.
+              Дадлагын дараа ажлын санал авч үргэлжлүүлэн ажиллаж, бодит
+              бүтээгдэхүүн хөгжүүлэх болон хэрэглэгчид хүрэх шийдэл дээр
+              туршлага хуримтлуулж байна.
             </div>
-            <span class="tl-tag blue">Судалгаа</span>
-          </div>
-          <div class="tl-item">
-            <div class="tl-dot"></div>
-            <div class="tl-year">2021 оны 04 сар</div>
-            <div class="tl-title">
-              Монголын Математикийн Олимпиад — 2-р байр
-            </div>
-            <div class="tl-desc">
-              Улсын математикийн олимпиадын их дээд сургуулиудын хэсэгт 2-р байр
-              эзэлж мөнгөн медаль хүртсэн.
-            </div>
-            <span class="tl-tag gold">2-р байр</span>
+            <span class="tl-tag green">Ажил</span>
           </div>
         </div>
       </div>
     </section>
 
+    <div class="logos-section">
+      <div class="wrap">
+        <p class="logos-label">Хамтарч ажилласан, шалгарсан байгууллагууд</p>
+
+        <div class="logos-track">
+          <div class="logo-badge">
+            <div class="logo-circle logo-img-box">
+              <img src="assets/images/logos/num.png" alt="МУИС лого" />
+            </div>
+            <div class="logo-name">
+              МУИС
+              <div class="logo-type">Их сургууль</div>
+            </div>
+          </div>
+
+          <!-- CoreMind -->
+          <div class="logo-badge">
+            <div class="logo-circle logo-img-box">
+              <img src="assets/images/logos/coremind.png" alt="CoreMind лого" />
+            </div>
+            <div class="logo-name">
+              CoreMind
+              <div class="logo-type">Ажил</div>
+            </div>
+          </div>
+
+          <!-- Khan Bank -->
+          <div class="logo-badge">
+            <div class="logo-circle logo-img-box">
+              <img
+                src="assets/images/logos/khanbank.png"
+                alt="Хаан Банк лого"
+              />
+            </div>
+            <div class="logo-name">
+              Хаан Банк
+              <div class="logo-type">DigiPay</div>
+            </div>
+          </div>
+
+          <!-- MCS / Unitel -->
+          <div class="logo-badge">
+            <div class="logo-circle logo-img-box">
+              <img src="assets/images/logos/unitel.png" alt="Unitel лого" />
+            </div>
+            <div class="logo-name">
+              MCS / Unitel
+              <div class="logo-type">Санал</div>
+            </div>
+          </div>
+
+          <!-- TESO -->
+          <div class="logo-badge">
+            <div class="logo-circle logo-img-box">
+              <img src="assets/images/logos/teso.png" alt="Тэсо лого" />
+            </div>
+            <div class="logo-name">
+              Тэсо
+              <div class="logo-type">Санал</div>
+            </div>
+          </div>
+
+          <!-- Monos -->
+          <div class="logo-badge">
+            <div class="logo-circle logo-img-box">
+              <img src="assets/images/logos/monos.png" alt="Монос лого" />
+            </div>
+            <div class="logo-name">
+              Монос
+              <div class="logo-type">Санал</div>
+            </div>
+          </div>
+
+          <!-- DigiPay Hackathon -->
+          <div class="logo-badge">
+            <div class="logo-circle logo-img-box">
+              <img
+                src="assets/images/logos/digipay.png"
+                alt="DigiPay Hackathon лого"
+              />
+            </div>
+            <div class="logo-name">
+              DigiPay 2025
+              <div class="logo-type">Top 7</div>
+            </div>
+          </div>
+
+          <!-- TechSprint -->
+          <div class="logo-badge">
+            <div class="logo-circle logo-img-box">
+              <img
+                src="assets/images/logos/techsprints.png"
+                alt="TechSprint лого"
+              />
+            </div>
+            <div class="logo-name">
+              TechSprint 26
+              <div class="logo-type">Top 10</div>
+            </div>
+          </div>
+
+          <!-- SPARK DAY -->
+          <div class="logo-badge">
+            <div class="logo-circle logo-img-box">
+              <img src="assets/images/logos/spark.png" alt="SPARK DAY лого" />
+            </div>
+            <div class="logo-name">
+              SPARK DAY
+              <div class="logo-type">Тусгай байр</div>
+            </div>
+          </div>
+
+          <!-- MMT -->
+          <div class="logo-badge">
+            <div class="logo-circle logo-img-box">
+              <img src="assets/images/logos/mmta.png" alt="ММТ 2026 лого" />
+            </div>
+            <div class="logo-name">
+              ММТ 2026
+              <div class="logo-type">Poster</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <section id="projects">
       <div class="section-inner">
-        <p class="section-label reveal">Судалгаа ба Бүтээл</p>
-        <h2 class="section-title reveal">Төслүүд ба Инноваци</h2>
+        <p class="section-label reveal">Төслүүд ба бүтээгдэхүүн</p>
+        <h2 class="section-title reveal">
+          Бодит хөгжүүлэлтээр батлагдсан туршлага
+        </h2>
         <div class="divider reveal"></div>
+        <!-- <p class="section-sub reveal">
+          Доорх хэсгүүдийг тус бүрийн PDF баталгаажуулах материалтай холбосон.
+          PDF-үүдээ assets/docs хавтас дотор заасан нэрээр байршуулбал “Харах”
+          товч шууд уншина.
+        </p> -->
         <div class="projects-grid">
-          <div class="proj-card reveal">
+          <article class="proj-card reveal">
             <div class="proj-img">
               <img
-                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80"
-                alt="AI Traffic System"
+                src="assets/images/digipay.jpg"
+                onerror="
+                  this.onerror = null;
+                  this.src =
+                    'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=900&q=80';
+                "
+                alt="Future of DigiPay Hackathon"
               />
               <div class="proj-img-overlay"></div>
               <div class="proj-tech-pills">
-                <span class="tech-pill">Python</span>
-                <span class="tech-pill">TensorFlow</span>
-                <span class="tech-pill">OpenCV</span>
+                <span class="tech-pill">FinTech</span
+                ><span class="tech-pill">72 цаг</span
+                ><span class="tech-pill">Pitch</span>
               </div>
             </div>
             <div class="proj-body">
-              <h3>Замын хөдөлгөөний AI систем</h3>
+              <h3>Future of DigiPay Hackathon 2025</h3>
               <p>
-                Улаанбаатар хотын замын хөдөлгөөний түгжрэлийг дүн шинжилгээ
-                хийж, цахим камерын мэдээлэлд суурилан гэрлэн дохиог автоматаар
-                тохируулдаг систем.
+                Шилдэг 7 багийн нэгээр шалгарч, 72 цагийн хөгжүүлэлт хийсэн. 4-р
+                байр / тусгай байр, шилдэг pitch, дадлага болон ажлын урилга
+                авсан туршлага.
               </p>
               <div class="proj-meta">
-                <div class="proj-meta-item">
-                  🎯 Үр нөлөө: <strong>23% бууралт</strong>
-                </div>
-                <div class="proj-meta-item">📅 <strong>2023</strong></div>
+                <span class="proj-meta-item"
+                  ><i class="fas fa-ranking-star"></i
+                  ><strong>Top 7</strong></span
+                >
+                <span class="proj-meta-item"
+                  ><i class="fas fa-clock"></i><strong>72 цаг</strong></span
+                >
+                <span class="proj-meta-item"
+                  ><i class="fas fa-briefcase"></i><strong>Урилга</strong></span
+                >
+              </div>
+              <div class="project-actions">
+                <button class="view-btn" onclick="openDoc('digipay')">
+                  <i class="fas fa-eye"></i> Материал харах
+                </button>
               </div>
             </div>
             <div class="proj-footer">
-              <span class="proj-tag">React</span>
-              <span class="proj-tag">PostgreSQL</span>
-              <span class="proj-tag">Docker</span>
+              <span class="proj-tag">Hackathon</span
+              ><span class="proj-tag">FinTech</span>
             </div>
-          </div>
-          <div class="proj-card reveal reveal-delay-1">
+          </article>
+
+          <article class="proj-card reveal reveal-delay-1">
             <div class="proj-img">
               <img
-                src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=700&q=80"
-                alt="Blockchain FinTech"
+                src="assets/images/techprint.jpg"
+                onerror="
+                  this.onerror = null;
+                  this.src =
+                    'https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=900&q=80';
+                "
+                alt="TechSprint 2026"
               />
               <div class="proj-img-overlay"></div>
               <div class="proj-tech-pills">
-                <span class="tech-pill">Solidity</span>
-                <span class="tech-pill">Web3.js</span>
-                <span class="tech-pill">Ethereum</span>
+                <span class="tech-pill">Innovation</span
+                ><span class="tech-pill">Prototype</span
+                ><span class="tech-pill">Team</span>
               </div>
             </div>
             <div class="proj-body">
-              <h3>ФинТек Блокчейн Платформ</h3>
+              <h3>Санхүүгийн инновац TechSprint 2026</h3>
               <p>
-                Хөдөөгийн нүүдэлчид болон банкны үйлчилгээгүй иргэдэд зориулсан
-                хяналттай зээлийн платформ. Ethereum смарт гэрээ ашиглан
-                итгэлцлийн асуудлыг шийдсэн.
+                Шилдэг 10 багийн нэгээр шалгарч, бүтээгдэхүүний санаа,
+                prototype, хөгжүүлэлтийг богино хугацаанд гаргасан.
               </p>
               <div class="proj-meta">
-                <div class="proj-meta-item">
-                  👥 Хэрэглэгч: <strong>500+</strong>
-                </div>
-                <div class="proj-meta-item">📅 <strong>2022–2023</strong></div>
+                <span class="proj-meta-item"
+                  ><i class="fas fa-trophy"></i><strong>Top 10</strong></span
+                >
+                <span class="proj-meta-item"
+                  ><i class="fas fa-code-branch"></i
+                  ><strong>Development</strong></span
+                >
+                <span class="proj-meta-item"
+                  ><i class="fas fa-users"></i><strong>Team</strong></span
+                >
+              </div>
+              <div class="project-actions">
+                <button class="view-btn" onclick="openDoc('techsprint')">
+                  <i class="fas fa-eye"></i> Материал харах
+                </button>
               </div>
             </div>
             <div class="proj-footer">
-              <span class="proj-tag">Go</span>
-              <span class="proj-tag">MongoDB</span>
-              <span class="proj-tag">AWS</span>
+              <span class="proj-tag">TechSprint</span
+              ><span class="proj-tag">Innovation</span>
             </div>
-          </div>
-          <div class="proj-card reveal">
+          </article>
+
+          <article class="proj-card reveal">
             <div class="proj-img">
               <img
-                src="https://images.unsplash.com/photo-1596455607563-ad6193f76b17?w=700&q=80"
-                alt="Mongol Script OCR"
+                src="assets/images/sparkday.jpg"
+                onerror="
+                  this.onerror = null;
+                  this.src =
+                    'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=900&q=80';
+                "
+                alt="SPARK DAY 2026"
               />
               <div class="proj-img-overlay"></div>
               <div class="proj-tech-pills">
-                <span class="tech-pill">PyTorch</span>
-                <span class="tech-pill">CNN</span>
-                <span class="tech-pill">NLP</span>
+                <span class="tech-pill">Product</span
+                ><span class="tech-pill">Pitch</span
+                ><span class="tech-pill">Special</span>
               </div>
             </div>
             <div class="proj-body">
-              <h3>Монгол Бичгийн OCR — IEEE нийтлэл</h3>
+              <h3>SPARK DAY 2026 төслийн уралдаан</h3>
               <p>
-                Уламжлалт Монгол бичгийг дижиталчлах зориулалттай Deep Learning
-                загвар. 95.3% нарийвчлалтайгаар тэмдэгт таних чадвартай. IEEE
-                конференцэд нийтлэгдсэн.
+                Оюутан залуусын “оч”-ийг асаах төслийн уралдаанд тусгай байр
+                эзэлж, product development багийн хувьд хамтран ажиллах боломж
+                авсан.
               </p>
               <div class="proj-meta">
-                <div class="proj-meta-item">
-                  📊 Нарийвчлал: <strong>95.3%</strong>
-                </div>
-                <div class="proj-meta-item">📖 <strong>IEEE 2022</strong></div>
+                <span class="proj-meta-item"
+                  ><i class="fas fa-medal"></i
+                  ><strong>Тусгай байр</strong></span
+                >
+                <span class="proj-meta-item"
+                  ><i class="fas fa-lightbulb"></i
+                  ><strong>Бүтээлч шийдэл</strong></span
+                >
+                <span class="proj-meta-item"
+                  ><i class="fas fa-handshake"></i
+                  ><strong>Хамтын санал</strong></span
+                >
+              </div>
+              <div class="project-actions">
+                <button class="view-btn" onclick="openDoc('spark')">
+                  <i class="fas fa-eye"></i> Материал харах
+                </button>
               </div>
             </div>
             <div class="proj-footer">
-              <span class="proj-tag">Python</span>
-              <span class="proj-tag">CUDA</span>
-              <span class="proj-tag">Flask</span>
+              <span class="proj-tag">Project</span
+              ><span class="proj-tag">Special Award</span>
             </div>
-          </div>
-          <div class="proj-card reveal reveal-delay-1">
+          </article>
+
+          <article class="proj-card reveal reveal-delay-1">
             <div class="proj-img">
               <img
-                src="https://images.unsplash.com/photo-1614624532983-4ce03382d63d?w=700&q=80"
-                alt="Smart Agriculture"
+                src="assets/images/diploma.png"
+                onerror="
+                  this.onerror = null;
+                  this.src =
+                    'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900&q=80';
+                "
+                alt="Дипломын web төсөл"
               />
               <div class="proj-img-overlay"></div>
               <div class="proj-tech-pills">
-                <span class="tech-pill">IoT</span>
-                <span class="tech-pill">React Native</span>
-                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">Web</span
+                ><span class="tech-pill">Traditional Game</span
+                ><span class="tech-pill">Diplom</span>
               </div>
             </div>
             <div class="proj-body">
-              <h3>Ухаалаг Тариалан Платформ — Hackathon 1-р байр</h3>
+              <h3>Монгол уламжлалт тоглоомын веб хөгжүүлэлт</h3>
               <p>
-                IoT мэдрэгч болон AI дүн шинжилгээг ашиглан газар тариалангийн
-                ургацыг урьдчилан таамаглаж, усалгаа болон бордооны хуваарийг
-                оновчтой болгодог систем.
+                Дипломын ажлын хүрээнд Монгол уламжлалт тоглоомыг веб орчинд
+                хөгжүүлж, том хэмжээний хөгжүүлэлт хийсэн. Үнэлгээ 4.0, 6
+                кредит.
               </p>
               <div class="proj-meta">
-                <div class="proj-meta-item">
-                  🌾 Ургац: <strong>+31%</strong>
-                </div>
-                <div class="proj-meta-item">
-                  🏆 <strong>Хакатон 2023</strong>
-                </div>
+                <span class="proj-meta-item"
+                  ><i class="fas fa-graduation-cap"></i
+                  ><strong>4.0</strong></span
+                >
+                <span class="proj-meta-item"
+                  ><i class="fas fa-layer-group"></i
+                  ><strong>6 кредит</strong></span
+                >
+                <span class="proj-meta-item"
+                  ><i class="fas fa-globe"></i><strong>Web</strong></span
+                >
+              </div>
+              <div class="project-actions">
+                <button class="view-btn" onclick="openDoc('diploma')">
+                  <i class="fas fa-eye"></i> Диплом харах
+                </button>
               </div>
             </div>
             <div class="proj-footer">
-              <span class="proj-tag">Python</span>
-              <span class="proj-tag">MQTT</span>
-              <span class="proj-tag">Grafana</span>
+              <span class="proj-tag">Diplom</span
+              ><span class="proj-tag">Web Development</span>
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>
 
     <section class="leadership-section" id="leadership">
       <div class="section-inner">
-        <p class="section-label reveal">Манлайлал</p>
-        <h2 class="section-title reveal">Нийгмийн Оролцоо<br />ба Удирдлага</h2>
+        <p class="section-label reveal">Шилдэг төгсөгч</p>
+        <h2 class="section-title reveal">
+          Сурлага, бүтээл, ажил, нийгмийн оролцоо
+        </h2>
         <div class="divider reveal"></div>
         <div class="leadership-grid">
           <div class="leadership-text reveal">
             <p>
-              Оюутны дөрвөн жилийн турш зөвхөн сурлагын амжилтаар
-              хязгаарлагдалгүй, нийгмийн идэвхтэй гишүүн байхыг зорьсон. Оюутны
-              холбооноос эхлэн олон улсын тэмцээн хүртэл олон тавцанд тэргүүлэн
-              ажилласан.
+              Миний онцлог нь зөвхөн өндөр голчтой байх бус, харин сурлагын
+              амжилтаа бодит төсөл, hackathon, эрдэм шинжилгээний хурал,
+              дадлага, ажлын санал, нийгмийн үйл ажиллагаатай холбож хөгжүүлж
+              чадсан юм.
             </p>
             <ul class="leader-checks">
               <li>
-                <span class="check-icon">✓</span>Монголын хамгийн том оюутны
-                хакатоныг зохион байгуулсан (600+ оролцогч)
+                <span class="check-icon"><i class="fas fa-check"></i></span
+                >Сүүлийн 4 улирлын GPA 3.925, сүүлийн 2 улирлын GPA 4.0.
               </li>
               <li>
-                <span class="check-icon">✓</span>Жил бүр 60 гаруй анхны курсын
-                оюутанд менторинг хийсэн
+                <span class="check-icon"><i class="fas fa-check"></i></span
+                >Future of DigiPay, TechSprint, SPARK DAY зэрэг бүтээгдэхүүн
+                хөгжүүлэлтийн тэмцээнд шалгарсан.
               </li>
               <li>
-                <span class="check-icon">✓</span>Корпорацийн 12 сая₮ спонсорын
-                мөнгө авчирсан
+                <span class="check-icon"><i class="fas fa-check"></i></span>ММТ
+                2026 эрдэм шинжилгээний хуралд poster илтгэлээр оролцсон.
               </li>
               <li>
-                <span class="check-icon">✓</span>Google DSC байгуулж, 200+
-                гишүүнтэй болгосон
+                <span class="check-icon"><i class="fas fa-check"></i></span
+                >CoreMind ХХК-д web developer-оор ажиллаж, бодит бүтээгдэхүүн
+                хөгжүүлсэн.
               </li>
               <li>
-                <span class="check-icon">✓</span>Сайн дурын 300+ цаг, 5 өөр
-                байгуулллагад
+                <span class="check-icon"><i class="fas fa-check"></i></span>Сайн
+                дурын ажил, спорт, олон хэл сурах зорилгоор хувь хүний хөгжлөө
+                тэлж байна.
               </li>
             </ul>
           </div>
           <div class="leadership-cards reveal reveal-delay-2">
             <div class="leader-card">
-              <div class="leader-card-num">15,000+</div>
-              <h4>Оюутны нэгдлийн ерөнхийлөгч</h4>
-              <p>МУСИС-ийн нийт оюутныг төлөөлж ажилласан</p>
+              <div class="leader-card-num">3.925</div>
+              <h4>Сүүлийн 4 улирлын GPA</h4>
+              <p>Төгсөх түвшинд тогтвортой өндөр сурлагын үзүүлэлт.</p>
             </div>
             <div class="leader-card">
-              <div class="leader-card-num">200+</div>
-              <h4>Google DSC гишүүд</h4>
-              <p>Байгуулж хөгжүүлсэн Tech клуб</p>
+              <div class="leader-card-num">4.0</div>
+              <h4>Сүүлийн 2 улирал ба диплом</h4>
+              <p>
+                Дипломын хөгжүүлэлт, хичээл, тэмцээн, ажлын ачааллыг амжилттай
+                давж гарсан.
+              </p>
             </div>
             <div class="leader-card">
-              <div class="leader-card-num">12+</div>
-              <h4>Воркшоп зохион байгуулав</h4>
-              <p>Web, AI, Blockchain чиглэлээр</p>
+              <div class="leader-card-num">72 цаг</div>
+              <h4>Hackathon хөгжүүлэлт</h4>
+              <p>Богино хугацаанд prototype, pitch, бүтээгдэхүүн гаргасан.</p>
             </div>
             <div class="leader-card">
-              <div class="leader-card-num">300+</div>
-              <h4>Сайн дурын цаг</h4>
-              <p>Нийгэмд оруулсан хувь нэмэр</p>
+              <div class="leader-card-num">5+</div>
+              <h4>Ажлын болон дадлагын санал</h4>
+              <p>Байгууллагуудаас практик чадамжийг үнэлсэн боломжууд.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <div class="cert-modal" id="certModal" onclick="closeCert(event)">
-      <div class="cert-modal-wrap cert-modal-inner">
-        <button class="cert-modal-close" onclick="closeCertDirect()">✕</button>
-        <img
-          class="cert-modal-img"
-          id="certModalImg"
-          src=""
-          alt="Certificate"
-        />
-        <div class="cert-modal-body">
-          <div
-            id="certModalIssuer"
-            style="
-              font-size: 0.8rem;
-              font-weight: 600;
-              letter-spacing: 0.06em;
-              text-transform: uppercase;
-              color: var(--blue);
-              margin-bottom: 6px;
-            "
-          ></div>
-          <h3
-            id="certModalName"
-            style="
-              font-size: 1.2rem;
-              font-weight: 700;
-              color: var(--text);
-              margin-bottom: 8px;
-            "
-          ></h3>
-          <p
-            id="certModalDate"
-            style="font-size: 0.875rem; color: var(--muted)"
-          ></p>
-          <button
-            onclick="openDoc('certificates')"
-            style="
-              margin-top: 20px;
-              background: var(--blue);
-              color: #fff;
-              padding: 10px 24px;
-              border-radius: 100px;
-              font-size: 0.875rem;
-              font-weight: 600;
-              border: none;
-              cursor: pointer;
-            "
-          >
-            📥 Баталгаажсан хуулбар үзэх
-          </button>
+    <section class="beyond-section" id="beyond">
+      <div class="section-inner">
+        <p class="section-label reveal">Чөлөөт цаг</p>
+        <h2 class="section-title reveal">
+          Олон нийтийн ажил, спорт, хэлний хөгжил
+        </h2>
+        <div class="divider reveal"></div>
+        <div class="beyond-grid">
+          <div class="beyond-card bc-blue reveal">
+            <span class="beyond-icon"
+              ><i class="fas fa-hand-holding-heart"></i
+            ></span>
+            <h4>Сайн дурын оролцоо</h4>
+            <p>
+              Улаан Загалмай, Best клуб болон сургуулийн хүрээнд гадаад гудамж
+              талбай, сургуулийн орчин цэвэрлэх мод тарих зэрэг ажилд оролцсон.
+            </p>
+            <span class="beyond-tag">Нийгмийн оролцоо</span>
+          </div>
+          <div class="beyond-card bc-green reveal reveal-delay-1">
+            <span class="beyond-icon"
+              ><i class="fas fa-house-chimney-user"></i
+            ></span>
+            <h4>Гэр бүлийн сайн үйлс</h4>
+            <p>
+              Гэр бүлээрээ сайн дурын байгууллагад хандив өгч, хүүхдүүдэд
+              зориулсан хашаа, байшин засварлах ажилд гар бие оролцсон.
+            </p>
+            <span class="beyond-tag">Хариуцлага</span>
+          </div>
+          <div class="beyond-card bc-orange reveal reveal-delay-2">
+            <span class="beyond-icon"><i class="fas fa-volleyball"></i></span>
+            <h4>Спорт</h4>
+            <p>
+              Волейболын хоёрдугаар зэрэгтэй. Сагсан бөмбөг, теннис, шатар
+              тоглох сонирхолтой.
+            </p>
+            <span class="beyond-tag">Идэвхтэй амьдрал</span>
+          </div>
+          <div class="beyond-card bc-purple reveal">
+            <span class="beyond-icon"><i class="fas fa-chess-knight"></i></span>
+            <h4>Тэмцээн</h4>
+            <p>
+              10 жилийн сургуулийн төгсөгчдийн тэмцээнд волейбол болон шатрын
+              төрөлд 2, 3 дугаар байр эзэлсэн. 2022 онд ДУА-Шилдэг төгсөгчөөр
+              шалгарсан.
+            </p>
+            <span class="beyond-tag">Өрсөлдөөн</span>
+          </div>
+          <div class="beyond-card bc-red reveal reveal-delay-1">
+            <span class="beyond-icon"><i class="fas fa-language"></i></span>
+            <h4>Хэлний хөгжил</h4>
+            <p>
+              Англи хэлээ сайжруулах зорилготой. Мөн Хятад, Япон, Орос хэлний
+              анхан шатны яриа, бичгийн хэл зүйг суралцаж байна.
+            </p>
+            <span class="beyond-tag">Олон талт хөгжил</span>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <section class="roadmap-section" id="roadmap">
+      <div class="section-inner">
+        <p class="section-label reveal">Карьер</p>
+
+        <h2 class="section-title reveal">Суралцагчаас хөгжүүлэгч хүртэл</h2>
+
+        <div class="divider reveal"></div>
+
+        <div class="roadmap-track reveal">
+          <div class="roadmap-line"></div>
+          <div class="roadmap-progress" id="roadmapProgress"></div>
+
+          <div class="roadmap-nodes">
+            <div class="roadmap-node done">
+              <div class="roadmap-dot-wrap">
+                <div class="roadmap-dot"><i class="fas fa-school"></i></div>
+              </div>
+              <div class="roadmap-year">2022</div>
+              <div class="roadmap-title">МУИС-д элссэн</div>
+              <div class="roadmap-desc">
+                Мэдээллийн технологийн чиглэлээр суурь мэдлэгээ системтэй
+                эзэмшиж эхэлсэн.
+              </div>
+            </div>
+
+            <div class="roadmap-node done">
+              <div class="roadmap-dot-wrap">
+                <div class="roadmap-dot">
+                  <i class="fas fa-laptop-code"></i>
+                </div>
+              </div>
+              <div class="roadmap-year">2024</div>
+              <div class="roadmap-title">Хөгжүүлэлтийн суурь туршлага</div>
+              <div class="roadmap-desc">
+                Веб болон программ хөгжүүлэлтийн үндсэн чадвараа төсөл, бие
+                даалтын ажлаар бататгасан.
+              </div>
+            </div>
+
+            <div class="roadmap-node done">
+              <div class="roadmap-dot-wrap">
+                <div class="roadmap-dot"><i class="fas fa-lightbulb"></i></div>
+              </div>
+              <div class="roadmap-year">2025</div>
+              <div class="roadmap-title">
+                Бүтээгдэхүүн хөгжүүлэлтийн туршлага
+              </div>
+              <div class="roadmap-desc">
+                Богино хугацаанд санаа боловсруулах, prototype гаргах, багаар
+                ажиллах туршлага хуримтлуулсан.
+              </div>
+            </div>
+
+            <div class="roadmap-node current">
+              <div class="roadmap-dot-wrap">
+                <div class="roadmap-dot"><i class="fas fa-briefcase"></i></div>
+              </div>
+              <div class="roadmap-year">2026</div>
+              <div class="roadmap-title">CoreMind ХХК</div>
+              <div class="roadmap-desc">
+                Web developer-оор ажиллаж, бодит бүтээгдэхүүн хөгжүүлэх үйл
+                явцад оролцож байна.
+              </div>
+            </div>
+
+            <div class="roadmap-node">
+              <div class="roadmap-dot-wrap">
+                <div class="roadmap-dot"><i class="fas fa-user-tie"></i></div>
+              </div>
+              <div class="roadmap-year">2028</div>
+              <div class="roadmap-title">Мэргэжлийн хөгжүүлэгч</div>
+              <div class="roadmap-desc">
+                Frontend, backend, system design-ийн мэдлэгээ гүнзгийрүүлж, бие
+                даан шийдэл гаргах түвшинд хүрэх зорилготой.
+              </div>
+            </div>
+
+            <div class="roadmap-node">
+              <div class="roadmap-dot-wrap">
+                <div class="roadmap-dot"><i class="fas fa-rocket"></i></div>
+              </div>
+              <div class="roadmap-year">2030</div>
+              <div class="roadmap-title">Senior түвшний мэргэжилтэн</div>
+              <div class="roadmap-desc">
+                Бүтээгдэхүүн, баг, системийн түвшинд шийдвэр гаргах чадвартай
+                хөгжүүлэгч болохыг зорьж байна.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="goals-section" id="goals">
+      <div class="goals-inner">
+        <p class="section-label reveal">5–10 жилийн зорилго</p>
+        <h2 class="section-title reveal">Мэргэжилтнээс үнэ цэн бүтээгч рүү</h2>
+        <div
+          class="divider reveal"
+          style="margin-left: auto; margin-right: auto"
+        ></div>
+        <p class="section-sub reveal">
+          10 жилийн дараа би мэргэжлийн ур чадвараа бүрэн хөгжүүлж, салбартаа
+          бусдад хүлээн зөвшөөрөгдсөн мэргэжилтэн болсон байхыг зорьж байна.
+          Санхүүгийн хараат бус байдалд хүрч, шинэ чиглэлүүдэд суралцан, өөрийн
+          туршлагаа оюутан залуус, дүү нартаа хуваалцдаг хариуцлагатай хүн
+          байхыг хүсдэг.
+        </p>
+        <div class="goals-cards">
+          <div class="goal-card reveal">
+            <div class="goal-num">01</div>
+            <h4>Мэргэжлийн гүнзгий ур чадвар</h4>
+            <p>
+              Web, software engineering, product development чиглэлээр ахисан
+              түвшний туршлага хуримтлуулах.
+            </p>
+          </div>
+          <div class="goal-card reveal reveal-delay-1">
+            <div class="goal-num">02</div>
+            <h4>Санхүүгийн болон хувь хүний эрх чөлөө</h4>
+            <p>
+              Өөрийн зорилго, амьдралын төлөвлөлтөө хэрэгжүүлэх санхүүгийн
+              суурьтай болох.
+            </p>
+          </div>
+          <div class="goal-card reveal">
+            <div class="goal-num">03</div>
+            <h4>Олон салбарын мэдлэг</h4>
+            <p>
+              IT-гээс гадна хэл, бизнес, бүтээгдэхүүн, менежментийн чиглэлээр
+              хөгжих.
+            </p>
+          </div>
+          <div class="goal-card reveal reveal-delay-1">
+            <div class="goal-num">04</div>
+            <h4>Бусдад сэдэл өгөх</h4>
+            <p>
+              Оюутан залууст зөвлөгөө өгч, туршлагаа хуваалцан “би боломжтой юм
+              байна” гэсэн итгэл төрүүлэх.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="rec-section" id="recommendations">
       <div class="section-inner">
         <p class="section-label reveal">Тодорхойлолт</p>
-        <h2 class="section-title reveal">Багш, Удирдагчдын<br />Үнэлгээ</h2>
+        <h2 class="section-title reveal">Багш, удирдагчдын үнэлгээ</h2>
         <div class="divider reveal"></div>
         <div class="rec-grid">
           <div class="rec-card reveal">
             <div class="rec-header">
               <img
                 class="rec-avatar"
-                src="https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?w=200&q=80"
-                alt="Проф. Эрдэнэтуяа"
+                src="assets/images/suvdaa.jpg"
+                alt="Проф. Сувдаа"
               />
               <div>
-                <div class="rec-name">Проф. Б. Эрдэнэтуяа</div>
-                <div class="rec-role">Компьютерийн шинжлэх ухааны декан</div>
+                <div class="rec-name">Дэд Проф. Б. Сувдаа</div>
+                <div class="rec-role">
+                  Мэдээлэл, компьютерийн ухааны тэнхим (Мтэс, Мкут)
+                </div>
                 <div class="rec-org">Монгол Улсын Их Сургууль</div>
               </div>
             </div>
@@ -2548,9 +3365,11 @@
               ><span class="star">★</span>
             </div>
             <div class="rec-quote">
-              "Баярсайхан бол миний 20 жилийн багшлалын туршид тааралдсан онцгой
-              авьяастны нэг. Техникийн гүн мэдлэг болон манлайллын чадварыг
-              нэгтгэж чаддаг ховор оюутан."
+              “Б.Бат-Эрдэнэ нь мэргэжлийн ур чадвар, хариуцлага, бие даан
+              суралцах чадвар, бүтээлч хандлагаараа үе тэнгийн оюутнуудаасаа
+              онцгой ялгардаг. Тэрээр онолын мэдлэгээ бодит хөгжүүлэлттэй
+              уялдуулан хэрэгжүүлж чаддаг, цаашид салбартаа амжилттай өсөж
+              хөгжих өндөр нөөц боломжтой оюутан.”
             </div>
             <button class="rec-view-btn" onclick="openDoc('rec-erdene')">
               Бүтэн эхээр нь үзэх →
@@ -2560,13 +3379,13 @@
             <div class="rec-header">
               <img
                 class="rec-avatar"
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&q=80"
-                alt="Доктор Болор"
+                src="assets/images/purvee.png"
+                alt="Пүрэвсүрэн"
               />
               <div>
-                <div class="rec-name">Доктор Г. Болор</div>
-                <div class="rec-role">Ахлах AI Судлаач</div>
-                <div class="rec-org">МИС Судалгааны хүрээлэн</div>
+                <div class="rec-name">Д. Пүрэвсүрэн</div>
+                <div class="rec-role">Гүйцэтгэх захирал</div>
+                <div class="rec-org">CoreMind ХХК</div>
               </div>
             </div>
             <div class="rec-stars">
@@ -2575,9 +3394,13 @@
               ><span class="star">★</span>
             </div>
             <div class="rec-quote">
-              "OCR судалгааны ажлын чанар тун өндөр байсан. Магадгүй манай
-              хамгийн сайн дипломын ажил. Тэрбээр аль хэдийн судлаачийн
-              сэтгэлгээтэй."
+              “Б.Бат-Эрдэнэ нь CoreMind ХХК-д дадлага болон ажлын хүрээнд
+              хамтран ажиллах хугацаандаа хариуцлагатай, суралцах хурд сайтай,
+              бодит төслийн орчинд хурдан дасан зохицож чаддаг ажилтан гэдгээ
+              харуулсан. Тэрээр өгсөн үүрэг даалгаврыг тууштай гүйцэтгэж, веб
+              хөгжүүлэлтийн мэдлэгээ практик хэрэгжилттэй уялдуулан ашиглаж
+              чаддаг бөгөөд цаашид мэргэжлийн хувьд өсөж хөгжих өндөр нөөцтэй
+              залуу хөгжүүлэгч.”
             </div>
             <button class="rec-view-btn" onclick="openDoc('rec-bolor')">
               Бүтэн эхээр нь үзэх →
@@ -2587,13 +3410,13 @@
             <div class="rec-header">
               <img
                 class="rec-avatar"
-                src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&q=80"
-                alt="Ж. Батзориг"
+                src="assets/images/enkhtuya.png"
+                alt="Ж. Энхтуяа"
               />
               <div>
-                <div class="rec-name">Ж. Батзориг</div>
-                <div class="rec-role">Технологийн Захирал</div>
-                <div class="rec-org">Монгол Систем ХХК</div>
+                <div class="rec-name">Ц. Энхтуяа</div>
+                <div class="rec-role">Багш</div>
+                <div class="rec-org">МУИС, Мтэс, Мкут</div>
               </div>
             </div>
             <div class="rec-stars">
@@ -2602,8 +3425,13 @@
               ><span class="star">★</span>
             </div>
             <div class="rec-quote">
-              "Интернэт дээрх дадлагажигчдын дотроос хамгийн идэвхтэй нь байсан.
-              Ажил хэрэг болгодог, өөрийн санаачилгаар дагнан хийдэг залуу."
+              “Б.Бат-Эрдэнэ нь хичээл сургалт болон эрдэм шинжилгээний ажлын
+              хүрээнд өөрийгөө идэвхтэй, хариуцлагатай, судалгааны сэтгэлгээтэй
+              оюутан гэдгээ харуулсан. Тэрээр ММТ 2026 эрдэм шинжилгээний хуралд
+              poster илтгэлээр оролцохдоо сэдвээ ойлгомжтой боловсруулах, үр
+              дүнгээ цэгцтэй танилцуулах, багшийн зөвлөмжийг тусган сайжруулах
+              чадвартай байсан нь түүний мэргэжлийн өсөлтийн сайн суурьтайг
+              баталсан.”
             </div>
             <button class="rec-view-btn" onclick="openDoc('rec-batzorigon')">
               Бүтэн эхээр нь үзэх →
@@ -2613,13 +3441,13 @@
             <div class="rec-header">
               <img
                 class="rec-avatar"
-                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=200&q=80"
-                alt="С. Наранцэцэг"
+                src="assets/images/zorigoo.png"
+                alt="Энхзориг"
               />
               <div>
-                <div class="rec-name">С. Наранцэцэг</div>
-                <div class="rec-role">Оюутны Хөгжлийн Дэд Захирал</div>
-                <div class="rec-org">МУСИС</div>
+                <div class="rec-name">Г. Энхзориг</div>
+                <div class="rec-role">Вэб хөгжүүлэгчийн дарга</div>
+                <div class="rec-org">CoreMind ХХК</div>
               </div>
             </div>
             <div class="rec-stars">
@@ -2628,9 +3456,11 @@
               ><span class="star">★</span>
             </div>
             <div class="rec-quote">
-              "Оюутны холбооны Ерөнхийлөгч болохдоо цаг тухайд нь шийдвэр
-              гаргадаг, нөхдийнхөө сайн сайхныг бодогч, жинхэнэ манлайлагч
-              байсан."
+              “Б.Бат-Эрдэнэ нь дадлагын хугацаандаа багийн ажлын орчинд хурдан
+              дасан зохицож, өгсөн үүрэг даалгаврыг хариуцлагатай, цаг хугацаанд
+              нь гүйцэтгэдэг залуу хөгжүүлэгч гэдгээ харуулсан. Тэрээр шинэ
+              технологи, төслийн шаардлагыг богино хугацаанд ойлгож, бодит
+              хөгжүүлэлтэд үр дүнтэй оролцох чадвартай.”
             </div>
             <button class="rec-view-btn" onclick="openDoc('rec-narancetseg')">
               Бүтэн эхээр нь үзэх →
@@ -2640,197 +3470,75 @@
       </div>
     </section>
 
-    <section class="roadmap-section" id="roadmap">
+    <section class="docs-section" id="documents">
       <div class="section-inner">
-        <p class="section-label reveal">Карьерын Замнал</p>
-        <h2 class="section-title reveal">Ирээдүйн Төлөвлөгөө</h2>
+        <p class="section-label reveal">PDF материалууд</p>
+        <h2 class="section-title reveal">Нэг дороос харах хэсэг</h2>
         <div class="divider reveal"></div>
-        <p class="section-sub reveal" style="margin-bottom: 0">
-          Одоо хаана байгаа, хаашаа явж байгааг тодорхой харуулсан замнал.
-        </p>
-        <div class="roadmap-track reveal">
-          <div class="roadmap-line"></div>
-          <div class="roadmap-progress" id="roadmapProgress"></div>
-          <div class="roadmap-nodes">
-            <div class="roadmap-node done">
-              <div class="roadmap-dot-wrap">
-                <div class="roadmap-dot">🎓</div>
-              </div>
-              <div class="roadmap-year">2020</div>
-              <div class="roadmap-title">МУСИС элсэв</div>
-              <div class="roadmap-desc">Компьютерийн шинжлэх ухаан</div>
-            </div>
-            <div class="roadmap-node done">
-              <div class="roadmap-dot-wrap">
-                <div class="roadmap-dot">🔬</div>
-              </div>
-              <div class="roadmap-year">2022</div>
-              <div class="roadmap-title">IEEE нийтлэл</div>
-              <div class="roadmap-desc">Mongol Script OCR судалгаа</div>
-            </div>
-            <div class="roadmap-node current">
-              <div class="roadmap-dot-wrap">
-                <div class="roadmap-dot">⚡</div>
-              </div>
-              <div class="roadmap-year">2024 ← Одоо</div>
-              <div class="roadmap-title">Бакалавр төгсөнө</div>
-              <div class="roadmap-desc">GPA 3.95, Шилдэг Төгсөгч</div>
-            </div>
-            <div class="roadmap-node">
-              <div class="roadmap-dot-wrap">
-                <div class="roadmap-dot">💼</div>
-              </div>
-              <div class="roadmap-year">2025</div>
-              <div class="roadmap-title">Программ инженер</div>
-              <div class="roadmap-desc">AI стартап эсвэл tech компани</div>
-            </div>
-            <div class="roadmap-node">
-              <div class="roadmap-dot-wrap">
-                <div class="roadmap-dot">📚</div>
-              </div>
-              <div class="roadmap-year">2026–2029</div>
-              <div class="roadmap-title">PhD суралцана</div>
-              <div class="roadmap-desc">MIT / Stanford / ETH Zurich</div>
-            </div>
-            <div class="roadmap-node">
-              <div class="roadmap-dot-wrap">
-                <div class="roadmap-dot">🇲🇳</div>
-              </div>
-              <div class="roadmap-year">2030+</div>
-              <div class="roadmap-title">Монголд буцна</div>
-              <div class="roadmap-desc">AI компани, нийгмийн нөлөө</div>
-            </div>
+        <div class="docs-grid">
+          <div class="doc-card reveal" onclick="openDoc('cv')">
+            <div class="doc-icon"><i class="fas fa-id-card"></i></div>
+            <h4>CV</h4>
+            <button class="outline-btn" type="button">
+              <i class="fas fa-eye"></i> Харах
+            </button>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="beyond-section" id="beyond">
-      <div class="section-inner">
-        <p class="section-label reveal">Бусад үйл ажиллагаа</p>
-        <h2 class="section-title reveal">Зөвхөн дүн<br />биш — бүхэлд нь</h2>
-        <div class="divider reveal"></div>
-        <p class="section-sub reveal" style="margin-bottom: 0">
-          Амьдралыг зөвхөн сурлагаар хэмждэггүй. Эдгээр зүйлс намайг бүхэлд нь
-          бүрдүүлдэг.
-        </p>
-        <div class="beyond-grid">
-          <div class="beyond-card bc-blue reveal">
-            <span class="beyond-icon">🏋️</span>
-            <h4>Жүдо, Тамир</h4>
-            <p>
-              Дунд сургуулиасаа эхлэн жүдо хийж, аймгийн аварга болсон. Тамир
-              бол сэтгэлийн тэнцвэрийг хадгалах гол арга зам.
-            </p>
-            <span class="beyond-tag">Аймгийн аварга</span>
+          <div
+            class="doc-card reveal reveal-delay-1"
+            onclick="openDoc('transcript')"
+          >
+            <div class="doc-icon"><i class="fas fa-graduation-cap"></i></div>
+            <h4>Дүнгийн хуулбар</h4>
+            <button class="outline-btn" type="button">
+              <i class="fas fa-eye"></i> Харах
+            </button>
           </div>
-          <div class="beyond-card bc-green reveal reveal-delay-1">
-            <span class="beyond-icon">📚</span>
-            <h4>Ном унших</h4>
-            <p>
-              Жилд дундажаар 24+ ном уншдаг. Дуртай зохиолч: Харуки Мураками,
-              Cal Newport, Naval Ravikant.
-            </p>
-            <span class="beyond-tag">24+ ном/жил</span>
+          <div
+            class="doc-card reveal reveal-delay-2"
+            onclick="openDoc('offers')"
+          >
+            <div class="doc-icon"><i class="fas fa-briefcase"></i></div>
+            <h4>Ажлын санал</h4>
+            <button class="outline-btn" type="button">
+              <i class="fas fa-eye"></i> Харах
+            </button>
           </div>
-          <div class="beyond-card bc-orange reveal reveal-delay-2">
-            <span class="beyond-icon">🎙️</span>
-            <h4>Podcast, Контент</h4>
-            <p>
-              "Код & Кофе" podcast эхлүүлж, Монгол залуу технологичдод зориулсан
-              40+ дугаар гаргасан. 3,000+ дагагч.
-            </p>
-            <span class="beyond-tag">3,000+ дагагч</span>
+          <div class="doc-card reveal" onclick="openDoc('diploma')">
+            <div class="doc-icon"><i class="fas fa-graduation-cap"></i></div>
+            <h4>Диплом</h4>
+            <button class="outline-btn" type="button">
+              <i class="fas fa-eye"></i> Харах
+            </button>
           </div>
-          <div class="beyond-card bc-purple reveal">
-            <span class="beyond-icon">✈️</span>
-            <h4>Аялал, Гадаад туршлага</h4>
-            <p>
-              Япон, Солонгос, Сингапур зэрэг оронд техникийн хуралд оролцсон.
-              Соёл хоорондын харилцааны туршлага.
-            </p>
-            <span class="beyond-tag">5 орон</span>
+          <div class="doc-card reveal reveal-delay-1" onclick="openDoc('mmt')">
+            <div class="doc-icon"><i class="fas fa-newspaper"></i></div>
+            <h4>ММТ poster</h4>
+            <button class="outline-btn" type="button">
+              <i class="fas fa-eye"></i> Харах
+            </button>
           </div>
-          <div class="beyond-card bc-red reveal reveal-delay-1">
-            <span class="beyond-icon">🎨</span>
-            <h4>UI/UX Дизайн</h4>
-            <p>
-              Гоо зүйт интерфэйс бүтээх дуртай. Figma-г мэргэжлийн түвшинд
-              эзэмшсэн, хэд хэдэн брэндэд дизайн хийсэн.
-            </p>
-            <span class="beyond-tag">Figma Pro</span>
-          </div>
-          <div class="beyond-card bc-teal reveal reveal-delay-2">
-            <span class="beyond-icon">🤲</span>
-            <h4>Сайн Дурын Ажил</h4>
-            <p>
-              Хөдөөгийн сургуулиудад кодлолт заах "Digital Ger" хөтөлбөрт
-              оролцож, 200+ сурагчид хичээл зааж байна.
-            </p>
-            <span class="beyond-tag">200+ сурагч</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="goals-section" id="goals">
-      <div class="section-inner">
-        <div class="goals-inner">
-          <p class="section-label reveal">Ирээдүйн Зорилго</p>
-          <h2 class="section-title reveal">Алсын Харааны<br />Тэр Цэг</h2>
-          <div class="divider reveal" style="margin: 16px auto 28px"></div>
-          <p class="section-sub reveal">
-            Монгол улсыг Азийн технологийн төв болгоход өөрийн хувь нэмрийг
-            оруулах — энэ бол миний нэг юу бол зорилго.
-          </p>
-        </div>
-        <div class="goals-cards">
-          <div class="goal-card reveal">
-            <div class="goal-num">01</div>
-            <h4>PhD — Хиймэл Оюун Ухаан</h4>
-            <p>
-              Дэлхийн шилдэг их сургуульд (MIT, Stanford, ETH Zurich) хиймэл
-              оюун ухаан болон тооцоолон бодох нейрошинжлэлийн чиглэлээр
-              докторант суралцах.
-            </p>
-          </div>
-          <div class="goal-card reveal reveal-delay-1">
-            <div class="goal-num">02</div>
-            <h4>AI Startup Монголд</h4>
-            <p>
-              Судалгааны мэдлэгийг практикт нийцүүлэн Монгол хэл болон тал
-              нутгийн нүүдэлчдэд зориулсан AI бүтээгдэхүүн хөгжүүлэх компани
-              үүсгэн байгуулах.
-            </p>
-          </div>
-          <div class="goal-card reveal">
-            <div class="goal-num">03</div>
-            <h4>Дижитал Торгоны Зам</h4>
-            <p>
-              Монголыг Азийн Европын хооронд цахим өгөгдлийн коридор болгон
-              хөгжүүлэх бодлогын зөвлөлд оролцож, тоон эдийн засгийн стратеги
-              тодорхойлоход оролцох.
-            </p>
-          </div>
-          <div class="goal-card reveal reveal-delay-1">
-            <div class="goal-num">04</div>
-            <h4>Залуу Инноваторуудыг Дэмжих</h4>
-            <p>
-              Монголын залуу технологичдод дасгалжуулагч болж, тэтгэлэг болон
-              дадлагажих боломжоор хангах ecosystem байгуулах.
-            </p>
-          </div>
+          <!-- <div
+            class="doc-card reveal reveal-delay-2"
+            onclick="openDoc('portfolio')"
+          >
+            <div class="doc-icon"><i class="fas fa-folder-open"></i></div>
+            <h4>Нэгдсэн portfolio</h4>
+            <p>assets/docs/portfolio.pdf</p>
+            <button class="outline-btn" type="button">
+              <i class="fas fa-eye"></i> Харах
+            </button>
+          </div> -->
         </div>
       </div>
     </section>
 
     <div class="quote-section">
       <p class="big-quote reveal">
-        "Монгол тал нутгийн өргөн уудам байдал шиг манай залуучуудын боломж
-        хязгааргүй — бид зөвхөн зориг, чиглэл хэрэгтэй."
+        "Алдаа, сорилт бүрийг өөрийгөө дараагийн түвшинд хүргэх өгөгдөл гэж
+        харж, суралцагчаас бүтээгч рүү тасралтгүй ахина."
       </p>
       <p class="big-quote-author reveal">
-        — Батбаярын Бат-Эрдэнэ, МУСИС-ийн 2026 оны төгсөгч
+        — Батбаярын Бат-Эрдэнэ, МУИС-ийн 2026 оны төгсөх түвшний оюутан
       </p>
     </div>
 
@@ -2839,9 +3547,27 @@
         <div class="footer-brand">
           <h3>Батбаяр Бат-Эрдэнэ</h3>
           <p>
-            Монгол Улсын Их Сургууль<br />МЭДЭЭЛЛИЙН ТЕХНОЛОГИ, ЭЛЕКТРОНИКИЙН
-            СУРГУУЛЬ<br />2022–2026
+            Монгол Улсын Их Сургууль<br />Мэдээллийн технологи, электроникийн
+            сургууль<br />2022–2026
           </p>
+          <div class="footer-social">
+            <a
+              class="social-btn"
+              href="mailto:baterdenebatbayr321@gmail.com"
+              aria-label="email"
+              ><i class="fas fa-envelope"></i
+            ></a>
+            <a class="social-btn" href="tel:+97698990593" aria-label="phone"
+              ><i class="fas fa-phone"></i
+            ></a>
+            <a
+              class="social-btn"
+              href="https://github.com/Bat-BBE"
+              target="_blank"
+              aria-label="github"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
         </div>
         <div class="footer-links">
           <h4>Хуудас</h4>
@@ -2850,7 +3576,7 @@
             <li><a href="#academic">Сурлагын амжилт</a></li>
             <li><a href="#timeline">Амжилтын замнал</a></li>
             <li><a href="#projects">Төслүүд</a></li>
-            <li><a href="#leadership">Манлайлал</a></li>
+            <li><a href="#documents">PDF материал</a></li>
           </ul>
         </div>
         <div class="footer-links">
@@ -2858,23 +3584,62 @@
           <ul>
             <li>
               <a href="mailto:baterdenebatbayr321@gmail.com"
-                >📧 baterdenebatbayr321@gmail.com</a
+                ><i class="fas fa-envelope"></i>baterdenebatbayr321@gmail.com</a
               >
             </li>
-            <li><a href="tel:+97698990593">📱 +976 9899-0593</a></li>
+            <li>
+              <a href="tel:+97698990593"
+                ><i class="fas fa-phone"></i>+976 9899-0593</a
+              >
+            </li>
             <li>
               <a href="https://github.com/Bat-BBE" target="_blank"
-                >💻 github.com/Bat-BBE</a
+                ><i class="fab fa-github"></i>github.com/Bat-BBE</a
               >
             </li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 Б.Бат-Эрдэнэ. Бүх эрх хуулиар хамгаалагдсан.</p>
-        <p>МУСИС · МЭДЭЭЛЛИЙН ТЕХНОЛОГИ, ЭЛЕКТРОНИКИЙН СУРГУУЛЬ</p>
+        <p>© 2026 Б.Бат-Эрдэнэ. Portfolio website.</p>
+        <p>NUM · Information Technology and Electronics</p>
       </div>
     </footer>
+
+    <div class="pdf-modal" id="pdfModal" onclick="closePdf(event)">
+      <div class="pdf-modal-inner">
+        <div class="pdf-modal-header">
+          <div class="title-wrap">
+            <div class="pdf-placeholder-icon" id="pdfIcon">
+              <i class="fas fa-file-pdf"></i>
+            </div>
+            <div>
+              <h3 id="pdfModalTitle">PDF материал</h3>
+              <div class="pdf-meta" id="pdfMeta"></div>
+            </div>
+          </div>
+          <button
+            class="pdf-close-btn"
+            onclick="closePdfDirect()"
+            aria-label="close"
+          >
+            <i class="fas fa-xmark"></i>
+          </button>
+        </div>
+        <div class="pdf-viewer">
+          <iframe id="pdfFrame" class="pdf-frame" title="PDF viewer"></iframe>
+          <div class="pdf-placeholder" id="pdfFallback" style="display: none">
+            <div class="pdf-placeholder-icon">
+              <i class="fas fa-file-pdf"></i>
+            </div>
+            <h4 id="pdfPlaceholderTitle">PDF файл</h4>
+            <p id="pdfPlaceholderDesc">
+              PDF файлаа assets/docs хавтас дотор байршуулна.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script>
       const roadmapObs = new IntersectionObserver(
@@ -2884,7 +3649,7 @@
               const p = document.getElementById("roadmapProgress");
               if (p)
                 setTimeout(() => {
-                  p.style.width = "41.7%";
+                  p.style.width = "66.7%";
                 }, 300);
               roadmapObs.unobserve(e.target);
             }
@@ -2895,7 +3660,6 @@
       const rt = document.querySelector(".roadmap-track");
       if (rt) roadmapObs.observe(rt);
 
-      // NAV
       function toggleMenu() {
         document.getElementById("mobileMenu").classList.toggle("open");
       }
@@ -2904,12 +3668,10 @@
           window.scrollY > 10 ? "0 2px 20px rgba(0,0,0,.08)" : "none";
       });
 
-      // REVEAL
       function revealAll() {
         document.querySelectorAll(".reveal").forEach((el) => {
           if (el.getBoundingClientRect().top < window.innerHeight - 80) {
             el.classList.add("active");
-            // trigger progress bars
             el.querySelectorAll(".progress-fill[data-width]").forEach((bar) => {
               bar.style.width = bar.dataset.width + "%";
             });
@@ -2919,31 +3681,31 @@
       window.addEventListener("scroll", revealAll);
       document.addEventListener("DOMContentLoaded", () => {
         setTimeout(revealAll, 100);
-        // trigger hero bars immediately
         document
           .querySelectorAll(".progress-fill[data-width]")
           .forEach((b) => (b.style.width = b.dataset.width + "%"));
       });
 
-      // COUNTER
       const counters = document.querySelectorAll(".counter");
       const obs = new IntersectionObserver(
         (entries) => {
           entries.forEach((e) => {
             if (!e.isIntersecting) return;
-            const el = e.target,
-              target = +el.dataset.target,
-              dec = +el.dataset.decimals || 0;
-            let cur = 0,
-              dur = 1800,
-              steps = dur / 16;
+            const el = e.target;
+            const target = +el.dataset.target;
+            const dec = +el.dataset.decimals || 0;
+            let cur = 0;
+            const dur = 1600;
+            const steps = dur / 16;
             const step = target / steps;
             const tick = () => {
               cur += step;
               if (cur < target) {
                 el.textContent = cur.toFixed(dec);
                 requestAnimationFrame(tick);
-              } else el.textContent = target.toFixed(dec);
+              } else {
+                el.textContent = target.toFixed(dec);
+              }
             };
             tick();
             obs.unobserve(el);
@@ -2953,185 +3715,98 @@
       );
       counters.forEach((c) => obs.observe(c));
 
-      // CERT DATA
-      const certData = {
-        "google-ml": {
-          issuer: "Google",
-          name: "Machine Learning Crash Course",
-          date: "2023 оны 08 сар",
-          img: "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=700&q=80",
-        },
-        "aws-cloud": {
-          issuer: "Amazon Web Services",
-          name: "AWS Certified Solutions Architect",
-          date: "2023 оны 04 сар",
-          img: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=700&q=80",
-        },
-        "cisco-net": {
-          issuer: "Cisco",
-          name: "CCNA Network Associate",
-          date: "2022 оны 11 сар",
-          img: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=700&q=80",
-        },
-        "deeplearning-ai": {
-          issuer: "DeepLearning.AI / Coursera",
-          name: "Deep Learning Specialization",
-          date: "2022 оны 07 сар",
-          img: "https://images.unsplash.com/photo-1677756119517-756a188d2d94?w=700&q=80",
-        },
-        "meta-react": {
-          issuer: "Meta (Facebook)",
-          name: "React Advanced Development",
-          date: "2022 оны 03 сар",
-          img: "https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?w=700&q=80",
-        },
-        mongodb: {
-          issuer: "MongoDB University",
-          name: "MongoDB Developer Associate",
-          date: "2021 оны 12 сар",
-          img: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=700&q=80",
-        },
-      };
-      function openCert(id) {
-        const d = certData[id];
-        if (!d) return;
-        document.getElementById("certModalImg").src = d.img;
-        document.getElementById("certModalIssuer").textContent = d.issuer;
-        document.getElementById("certModalName").textContent = d.name;
-        document.getElementById("certModalDate").textContent = d.date;
-        document.getElementById("certModal").classList.add("open");
-        document.body.style.overflow = "hidden";
-      }
-      function closeCert(e) {
-        if (e.target === document.getElementById("certModal"))
-          closeCertDirect();
-      }
-      function closeCertDirect() {
-        document.getElementById("certModal").classList.remove("open");
-        document.body.style.overflow = "";
-      }
-
       const docData = {
         cv: {
-          title: "Curriculum Vitae — Баярсайхан Дорж",
-          icon: "📄",
-          desc: "Дипломд зориулсан бүтэн CV. Боловсрол, ажлын туршлага, ур чадвар, шагналуудыг багтаасан 4 хуудасны баримт.",
-          meta: [
-            { label: "PDF" },
-            { label: "4 хуудас" },
-            { label: "2024-05-01" },
-          ],
-          file: "bayarsaikhan_cv.pdf",
+          title: "CV — Батбаярын Бат-Эрдэнэ",
+          icon: "fas fa-id-card",
+          desc: "Товч анкет, сурлага, төсөл, ажил, олон нийтийн оролцоог нэгтгэсэн CV.",
+          meta: [{ label: "PDF" }, { label: "CV" }],
+          file: "assets/docs/cv.pdf",
         },
         transcript: {
-          title: "Дүнгийн Хуулбар — Баталгаажсан",
-          icon: "📊",
-          desc: "Сургалтын хэлтсийн тамга, гарын үсгээр баталгаажсан официал дүнгийн хуулбар. GPA 3.95, нийт 120 кредит.",
+          title: "Дүнгийн хуулбар",
+          icon: "fas fa-chart-line",
+          desc: "Сүүлийн улирлын GPA болон академик гүйцэтгэлийн баталгаажуулах материал.",
+          meta: [{ label: "PDF" }, { label: "GPA" }],
+          file: "assets/docs/transcript.pdf",
+        },
+        offers: {
+          title: "Ажлын болон дадлагын санал",
+          icon: "fas fa-briefcase",
+          desc: "Khan Bank, MCS/Unitel, TESO, Monos, CoreMind зэрэг боломжуудын баталгаажуулалт.",
+          meta: [{ label: "PDF" }, { label: "Offers" }],
+          file: "assets/docs/offers.pdf",
+        },
+        diploma: {
+          title: "Дипломын ажил — Монгол уламжлалт тоглоомын веб хөгжүүлэлт",
+          icon: "fas fa-graduation-cap",
+          desc: "6 кредит, 4.0 үнэлгээтэй дипломын ажил болон хөгжүүлэлтийн танилцуулга.",
+          meta: [{ label: "PDF" }, { label: "6 кредит" }],
+          file: "assets/docs/diploma.pdf",
+        },
+        digipay: {
+          title: "Future of DigiPay Hackathon 2025",
+          icon: "fas fa-money-bill-trend-up",
+          desc: "Шилдэг 7 баг, 4-р байр / тусгай байр, шилдэг pitch, 72 цагийн хөгжүүлэлтийн материал.",
+          meta: [{ label: "PDF" }, { label: "Top 7" }],
+          file: "assets/docs/digipay-hackathon.pdf",
+        },
+        techsprint: {
+          title: "Санхүүгийн инновац TechSprint 2026",
+          icon: "fas fa-bolt",
+          desc: "Шилдэг 10 баг, 72 цагийн хөгжүүлэлт, product prototype материал.",
+          meta: [{ label: "PDF" }, { label: "Top 10" }],
+          file: "assets/docs/techsprint-2026.pdf",
+        },
+        spark: {
+          title: "SPARK DAY 2026 төслийн уралдаан",
+          icon: "fas fa-lightbulb",
+          desc: "Тусгай байр, product development баг, хамтран ажиллах боломжийн материал.",
+          meta: [{ label: "PDF" }, { label: "Тусгай байр" }],
+          file: "assets/docs/spark-day-2026.pdf",
+        },
+        mmt: {
+          title: "ММТ 2026 poster илтгэл",
+          icon: "fas fa-newspaper",
+          desc: "Монголын мэдээллийн технологийн 2026 оны эрдэм шинжилгээний хурлын poster илтгэлийн материал.",
           meta: [
             { label: "PDF" },
-            { label: "6 хуудас" },
-            { label: "Баталгаажсан" },
+            { label: "Poster" },
+            { label: "assets/docs/mmt-2026-poster.pdf" },
           ],
-          file: "transcript_official.pdf",
+          file: "assets/docs/mmt-2026-poster.pdf",
         },
-        achievements: {
-          title: "Амжилтын Жагсаалт",
-          icon: "🏅",
-          desc: "Улс болон олон улсын тэмцээн, олимпиад, шагнал, манлайллын үйл ажиллагааны бүрэн жагсаалт.",
-          meta: [{ label: "PDF" }, { label: "3 хуудас" }, { label: "2024" }],
-          file: "achievements_list.pdf",
+        coremind: {
+          title: "CoreMind ХХК — ажлын туршлага",
+          icon: "fas fa-laptop-code",
+          desc: "Web developer, 6+ бодит төсөл, дадлагын дараах ажлын саналын баталгаажуулалт.",
+          meta: [{ label: "PDF" }, { label: "Work" }],
+          file: "assets/docs/coremind-reference.pdf",
         },
-        "rec-erdene": {
-          title: "Тодорхойлох Захидал — Проф. Б. Эрдэнэтуяа",
-          icon: "✉️",
-          desc: "Компьютерийн шинжлэх ухааны деканы гарын үсэгтэй тодорхойлох захидал. Оюутны техникийн ур чадвар, манлайллын талаар.",
-          meta: [
-            { label: "PDF" },
-            { label: "2 хуудас" },
-            { label: "МУСИС тамга" },
-          ],
-          file: "rec_letter_erdene.pdf",
-        },
-        "rec-bolor": {
-          title: "Тодорхойлох Захидал — Доктор Г. Болор",
-          icon: "✉️",
-          desc: "AI судалгааны чиглэлийн ахлах судлаачийн тодорхойлолт. OCR судалгааны ажлын чанарын талаар.",
-          meta: [
-            { label: "PDF" },
-            { label: "2 хуудас" },
-            { label: "МИС тамга" },
-          ],
-          file: "rec_letter_bolor.pdf",
-        },
-        "rec-batzorigon": {
-          title: "Тодорхойлох Захидал — Ж. Батзориг",
-          icon: "✉️",
-          desc: "Монгол Систем ХХК-ийн технологийн захирлын тодорхойлолт. Дадлагажих хугацааны ажлын үнэлгээ.",
-          meta: [
-            { label: "PDF" },
-            { label: "1 хуудас" },
-            { label: "Корпорат тамга" },
-          ],
-          file: "rec_letter_batzorigon.pdf",
-        },
-        "rec-narancetseg": {
-          title: "Тодорхойлох Захидал — С. Наранцэцэг",
-          icon: "✉️",
-          desc: "Оюутны хөгжлийн дэд захирлын тодорхойлолт. Оюутны холбооны манлайллын ажлын талаар.",
-          meta: [
-            { label: "PDF" },
-            { label: "2 хуудас" },
-            { label: "МУСИС тамга" },
-          ],
-          file: "rec_letter_narancetseg.pdf",
-        },
-        "research-paper": {
-          title: "IEEE Судалгааны Ажил — Mongol Script OCR",
-          icon: "🔬",
-          desc: "2022 оны IEEE конференцэд нийтлэгдсэн судалгааны ажил. Deep Learning ашиглан Монгол бичгийн OCR систем.",
-          meta: [
-            { label: "PDF" },
-            { label: "8 хуудас" },
-            { label: "IEEE 2022" },
-          ],
-          file: "mongol_ocr_ieee2022.pdf",
-        },
-        certificates: {
-          title: "Сертификатын Дэвтэр — 12 сертификат",
-          icon: "🎓",
-          desc: "Баталгаажсан 12 мэргэжлийн сертификатын дэвтэр. Google, AWS, Cisco, Meta, Coursera болон бусад.",
-          meta: [
-            { label: "PDF" },
-            { label: "24 хуудас" },
-            { label: "2021–2023" },
-          ],
-          file: "certificates_portfolio.pdf",
-        },
-        "portfolio-zip": {
-          title: "Бүх Материал — ZIP архив",
-          icon: "📦",
-          desc: "CV, дүнгийн хуулбар, 4 тодорхойлолт, судалгааны ажил, сертификатын дэвтэр бүгдийг нэг ZIP архивт багтаасан.",
-          meta: [
-            { label: "ZIP" },
-            { label: "~18 MB" },
-            { label: "2024-05-01" },
-          ],
-          file: "bayarsaikhan_portfolio.zip",
+        portfolio: {
+          title: "Нэгдсэн portfolio материал",
+          icon: "fas fa-folder-open",
+          desc: "CV, амжилт, төсөл, ажлын санал, диплом, poster илтгэлийн нэгдсэн материал.",
+          meta: [{ label: "PDF" }, { label: "Portfolio" }],
+          file: "assets/docs/portfolio.pdf",
         },
       };
-      let currentDoc = null;
+
       function openDoc(id) {
         const d = docData[id];
         if (!d) return;
-        currentDoc = d;
         document.getElementById("pdfModalTitle").textContent = d.title;
-        document.getElementById("pdfIcon").textContent = d.icon;
+        document.getElementById("pdfIcon").innerHTML =
+          `<i class="${d.icon}"></i>`;
         document.getElementById("pdfPlaceholderTitle").textContent = d.title;
         document.getElementById("pdfPlaceholderDesc").textContent = d.desc;
         const meta = document.getElementById("pdfMeta");
         meta.innerHTML = d.meta
           .map((m) => `<span class="pdf-meta-item">${m.label}</span>`)
           .join("");
+        const frame = document.getElementById("pdfFrame");
+        frame.src = d.file + "#toolbar=0&navpanes=0&scrollbar=1";
+        document.getElementById("pdfFallback").style.display = "none";
         document.getElementById("pdfModal").classList.add("open");
         document.body.style.overflow = "hidden";
       }
@@ -3140,21 +3815,11 @@
       }
       function closePdfDirect() {
         document.getElementById("pdfModal").classList.remove("open");
+        document.getElementById("pdfFrame").src = "";
         document.body.style.overflow = "";
       }
-      function downloadDoc() {
-        if (!currentDoc) return;
-        alert(
-          "📥 " +
-            currentDoc.file +
-            "\n\nЖинхэнэ портфолиод та энд бодит PDF файлаа байршуулна.\n\nЭнэ бол демо горим юм.",
-        );
-      }
       document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape") {
-          closeCertDirect();
-          closePdfDirect();
-        }
+        if (e.key === "Escape") closePdfDirect();
       });
     </script>
   </body>
